@@ -304,7 +304,14 @@
 
   <script>
     // Language switcher
-    function setLang(lang) {
+    function toggleLang() {
+      var current = localStorage.getItem('lang') || 'en';
+      var next = current === 'en' ? 'fr' : 'en';
+      setLang(next);
+      var el = document.querySelector('.lang-current');
+      if (el) el.textContent = next.toUpperCase();
+    }
+        function setLang(lang) {
       localStorage.setItem('lang', lang);
       document.querySelectorAll('[data-en]').forEach(function(el) {
         el.innerHTML = lang === 'fr' ? el.getAttribute('data-fr') : el.getAttribute('data-en');
@@ -312,6 +319,9 @@
       document.querySelectorAll('.lang-btn').forEach(function(btn) {
         btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
       });
+    
+      var langEl = document.querySelector('.lang-current');
+      if (langEl) langEl.textContent = lang.toUpperCase();
     }
     (function() {
       var saved = localStorage.getItem('lang') || 'en';

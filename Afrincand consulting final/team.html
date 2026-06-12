@@ -138,7 +138,7 @@
 
     <div class="profiles-secondary">
 
-      <div class="profile-secondary" id="p2">
+      <div class="profile-secondary" id="p4">
         <div class="profile-photo-sm" style="background:none;">
           <img src="images/team/hamed-adam-ouattara.jpeg" alt="Hamed Adam Ouattara"
             style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(1.05) brightness(0.95);" />
@@ -160,9 +160,9 @@
         
       </div>
 
-      <div class="profile-secondary" id="p3">
+      <div class="profile-secondary" id="p5">
         <div class="profile-photo-sm" style="background:none;">
-          <img src="images/team/michael-kouassi.jpeg" alt="Julien Leroy"
+          <img src="images/team/michael-kouassi.jpeg" alt="Michaël Zahoro Kouassi"
             style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(1.05) brightness(0.95);" />
         </div>
         <h3 class="profile-name-sm">Micha&#235;l Zahoro Kouassi</h3>
@@ -248,7 +248,14 @@
 
   <script>
     // Language switcher
-    function setLang(lang) {
+    function toggleLang() {
+      var current = localStorage.getItem('lang') || 'en';
+      var next = current === 'en' ? 'fr' : 'en';
+      setLang(next);
+      var el = document.querySelector('.lang-current');
+      if (el) el.textContent = next.toUpperCase();
+    }
+        function setLang(lang) {
       localStorage.setItem('lang', lang);
       document.querySelectorAll('[data-en]').forEach(function (el) {
         el.innerHTML = lang === 'fr' ? el.getAttribute('data-fr') : el.getAttribute('data-en');
@@ -256,6 +263,9 @@
       document.querySelectorAll('.lang-btn').forEach(function (btn) {
         btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
       });
+    
+      var langEl = document.querySelector('.lang-current');
+      if (langEl) langEl.textContent = lang.toUpperCase();
     }
     (function () {
       var saved = localStorage.getItem('lang') || 'en';

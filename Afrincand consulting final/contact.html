@@ -122,7 +122,14 @@
 
   <script>
     // Language switcher
-    function setLang(lang) {
+    function toggleLang() {
+      var current = localStorage.getItem('lang') || 'en';
+      var next = current === 'en' ? 'fr' : 'en';
+      setLang(next);
+      var el = document.querySelector('.lang-current');
+      if (el) el.textContent = next.toUpperCase();
+    }
+        function setLang(lang) {
       localStorage.setItem('lang', lang);
       document.querySelectorAll('[data-en]').forEach(function(el) {
         el.innerHTML = lang === 'fr' ? el.getAttribute('data-fr') : el.getAttribute('data-en');
@@ -130,6 +137,9 @@
       document.querySelectorAll('.lang-btn').forEach(function(btn) {
         btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
       });
+    
+      var langEl = document.querySelector('.lang-current');
+      if (langEl) langEl.textContent = lang.toUpperCase();
     }
     (function() {
       var saved = localStorage.getItem('lang') || 'en';
@@ -140,14 +150,33 @@
       document.getElementById('navLinks').classList.toggle('open');
     });
 
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
       e.preventDefault();
       const name = document.getElementById('name').value.trim();
       const email = document.getElementById('email').value.trim();
       const message = document.getElementById('message').value.trim();
       if (!name || !email || !message) return;
-      this.style.display = 'none';
-      document.getElementById('formSuccess').classList.add('visible');
+
+      const btn = this.querySelector('.btn-submit');
+      btn.disabled = true;
+
+      try {
+        const res = await fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
+          method: 'POST',
+          headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email, message })
+        });
+        if (res.ok) {
+          this.style.display = 'none';
+          document.getElementById('formSuccess').classList.add('visible');
+        } else {
+          btn.disabled = false;
+          alert('An error occurred. Please email us directly at contact@africand.com');
+        }
+      } catch (err) {
+        btn.disabled = false;
+        alert('Network error. Please email us directly at contact@africand.com');
+      }
     });
   </script>
 
