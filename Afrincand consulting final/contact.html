@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Africand Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Africand</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="approach.html" data-en="Approach" data-fr="Approche">Approach</a></li>
+      <li><a href="projects.html" data-en="Projects" data-fr="Projets">Projects</a></li>
+      <li><a href="services.html" data-en="Services" data-fr="Services">Services</a></li>
+      <li><a href="team.html" data-en="Team" data-fr="&#201;quipe">Team</a></li>
+      <li><a href="insights.html" data-en="Insights" data-fr="Publications">Insights</a></li>
+      <li><a href="careers.html" data-en="Careers" data-fr="Carri&#232;res">Careers</a></li>
+      <li><a href="contact.html" class="active" data-en="Contact" data-fr="Contact">Contact</a></li>
+    </ul>
+    <button class="nav-burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+      <div class="lang-switch">
+      <button class="lang-toggle" id="langToggle" onclick="toggleLang()" aria-label="Switch language">
+        <svg class="lang-globe" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <span class="lang-current">EN</span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="contact-page">
+
+    <!-- LEFT -->
+    <div class="contact-left">
+      <h1 class="contact-headline" data-en="Let's talk about<br><em>your transaction.</em>" data-fr="Parlons de<br><em>votre transaction.</em>">
+        Let's talk about<br>
+        <em>your transaction.</em>
+      </h1>
+      <div class="contact-coordinates">
+        <p class="coord-label" data-en="Coordinates" data-fr="Coordonn&eacute;es">Coordinates</p>
+
+        <div class="coord-item">
+          <span class="coord-key" data-en="Email" data-fr="Email">Email</span>
+          <span class="coord-value">
+            <a href="mailto:contact@africand.com">contact@africand.com</a>
+          </span>
+        </div>
+
+        <div class="coord-item">
+          <span class="coord-key" data-en="Operational Headquarters" data-fr="Si&egrave;ge Op&eacute;rationnel">Operational Headquarters</span>
+          <span class="coord-value">
+            Cocody Djorobité, CIE Base<br>
+            Corner of Salaï Boua Koffi Konan Street<br>
+            &amp; Bernadette Tahet Street<br>
+            Abidjan, Ivory Coast
+          </span>
+          <span class="coord-note" data-en="Project coordination and advisory activities." data-fr="Coordination de projets et activit&eacute;s de conseil.">Project coordination and advisory activities.</span>
+        </div>
+
+        <div class="coord-item">
+          <span class="coord-key" data-en="Institutional Address" data-fr="Adresse Institutionnelle">Institutional Address</span>
+          <span class="coord-value">
+            XL Building, 6th &amp; 7th Floor<br>
+            Republic Boulevard<br>
+            Plateau, Abidjan, Ivory Coast
+          </span>
+          <span class="coord-note" data-en="Institutional, administrative and commercial correspondence." data-fr="Correspondances institutionnelles, administratives et commerciales.">Institutional, administrative and commercial correspondence.</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="contact-right">
+      <p class="form-label-top" data-en="Send a Message" data-fr="Envoyer un Message">Send a Message</p>
+
+      <form class="contact-form" id="contactForm" novalidate>
+
+        <div class="form-field">
+          <label for="name" data-en="Name" data-fr="Nom">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" />
+        </div>
+
+        <div class="form-field">
+          <label for="email" data-en="Email" data-fr="Email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" />
+        </div>
+
+        <div class="form-field">
+          <label for="message" data-en="Message" data-fr="Message">Message</label>
+          <textarea id="message" name="message" placeholder="Briefly describe your mandate or enquiry."></textarea>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit" class="btn-submit">
+            <span class="btn-line"></span>
+            <span data-en="Send" data-fr="Envoyer">Send</span>
+            <span class="btn-arrow">→</span>
+          </button>
+          <p class="form-note" data-en="We respond to all serious enquiries within 48 hours." data-fr="Nous r&eacute;pondons &agrave; toutes les demandes s&eacute;rieuses dans les 48 heures.">
+            We respond to all serious enquiries within 48 hours.
+          </p>
+        </div>
+
+      </form>
+
+      <div class="form-success" id="formSuccess">
+        <p class="success-mark">—</p>
+        <p class="success-text" data-en="Message received.<br><em>We will be in touch.</em>" data-fr="Message re&ccedil;u.<br><em>Nous prendrons contact avec vous.</em>">
+          Message received.<br>
+          <em>We will be in touch.</em>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    // Language switcher
+    function setLang(lang) {
+      localStorage.setItem('lang', lang);
+      document.querySelectorAll('[data-en]').forEach(function(el) {
+        el.innerHTML = lang === 'fr' ? el.getAttribute('data-fr') : el.getAttribute('data-en');
+      });
+      document.querySelectorAll('.lang-btn').forEach(function(btn) {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+      });
+    }
+    (function() {
+      var saved = localStorage.getItem('lang') || 'en';
+      if (saved === 'fr') setLang('fr');
+    })();
+
+    document.getElementById('burger').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if (!name || !email || !message) return;
+      this.style.display = 'none';
+      document.getElementById('formSuccess').classList.add('visible');
+    });
+  </script>
+
+</body>
+</html>

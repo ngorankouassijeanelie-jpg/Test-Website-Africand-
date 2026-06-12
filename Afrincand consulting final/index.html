@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Africand Consulting — West Africa Agro-Industry Advisory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">Africand</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="approach.html" data-en="Approach" data-fr="Approche">Approach</a></li>
+      <li><a href="services.html" data-en="Services" data-fr="Services">Services</a></li>
+      <li><a href="projects.html" data-en="Projects" data-fr="Projets">Projects</a></li>
+      <li><a href="team.html" data-en="Team" data-fr="&#201;quipe">Team</a></li>
+      <li><a href="insights.html" data-en="Insights" data-fr="Publications">Insights</a></li>
+      <li><a href="careers.html" data-en="Careers" data-fr="Carri&#232;res">Careers</a></li>
+      <li><a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a></li>
+    </ul>
+    <button class="nav-burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="lang-switch">
+      <button class="lang-toggle" id="langToggle" onclick="toggleLang()" aria-label="Switch language">
+        <svg class="lang-globe" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <span class="lang-current">EN</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- §1 HERO — BLEU NUIT PREMIUM -->
+  <section class="hero">
+
+    <!-- Background slideshow -->
+    <div class="hero-slideshow" aria-hidden="true">
+      <div class="hero-slide active">
+        <video autoplay loop muted playsinline class="hero-video">
+          <source src="images/hero.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <!-- SVG grain filter -->
+    <svg width="0" height="0" style="position:absolute;" aria-hidden="true">
+      <defs>
+        <filter id="grain" x="0%" y="0%" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise" />
+          <feColorMatrix type="saturate" values="0" in="noise" result="grey" />
+          <feBlend in="SourceGraphic" in2="grey" mode="overlay" />
+        </filter>
+      </defs>
+    </svg>
+
+    <!-- Overlays -->
+    <div class="hero-grain" aria-hidden="true">
+      <svg width="100%" height="100%">
+        <rect width="100%" height="100%" filter="url(#grain)" />
+      </svg>
+    </div>
+    <div class="hero-light" aria-hidden="true"></div>
+    <div class="hero-vignette" aria-hidden="true"></div>
+
+    <!-- Filigrane 01 -->
+    <div class="hero-counter" aria-hidden="true">01</div>
+
+    <!-- Contenu gauche -->
+    <div class="hero-inner">
+      <p class="hero-eyebrow" data-en="West Africa · Agro-Industry Advisory" data-fr="Afrique de l&#8217;Ouest · Conseil Agro-Industrie">West Africa · Agro-Industry Advisory</p>
+      <h1 class="hero-title"
+        data-en="We structure capital<br>and build operational<br><em>capacity across African<br>agricultural value chains.</em>"
+        data-fr="Nous structurons des financements<br>et renfon&#231;ons les capacit&#233;s<br>op&#233;rationnelles dans les fili&#232;res<br>agricoles africaines.">
+        We structure capital<br>
+        and build operational<br>
+        <em>capacity across African<br>agricultural value chains.</em>
+      </h1>
+      <p class="hero-sub" data-en="Competitive, inclusive, and sustainable agricultural value chains." data-fr="Des cha&#238;nes de valeur agricole comp&#233;titives, inclusives et durables.">Competitive, inclusive, and sustainable agricultural value chains.</p>
+      <a href="contact.html" class="hero-cta">
+        <span data-en="Engage Us" data-fr="Nous Contacter">Engage Us</span> <span class="arrow">&#8594;</span>
+      </a>
+    </div>
+
+    <!-- Report cards droite -->
+    <div class="hero-reports">
+
+      <a href="insights/agro-industry-financing-cote-divoire-2026.html" class="hero-report-card">
+        <div class="hrc-img"
+          style="background-image:url('https://images.pexels.com/photos/17780405/pexels-photo-17780405.jpeg')"></div>
+        <div class="hrc-overlay"></div>
+        <div class="hrc-body">
+          <div class="hrc-meta">
+            <span class="hrc-year">2026</span>
+            <span class="hrc-sep">·</span>
+            <span class="hrc-tag">Market Note</span>
+          </div>
+          <p class="hrc-title" data-en="Agro-Industry Financing in C&#244;te d&#8217;Ivoire: State of Play 2026"
+            data-fr="Financement de l&#8217;Agro-industrie en C&#244;te d&#8217;Ivoire&#160;: &#201;tat des Lieux 2026">
+            Agro-Industry Financing in C&#244;te d&#8217;Ivoire: State of Play 2026</p>
+          <span class="hrc-cta"><span data-en="Read the report" data-fr="Lire le rapport">Read the report</span> <span
+              class="hrc-cta-arrow">&#8594;</span></span>
+        </div>
+      </a>
+
+
+    </div>
+
+
+
+  </section>
+
+  <!-- §2 CHIFFRES CLÉS -->
+  <section class="stats-bloc">
+    <div class="stat-item" id="stat1">
+      <p class="stat-number">+115 M€</p>
+      <p class="stat-label" data-en="Financing structured<br>and deployed"
+        data-fr="Financements octroy&#233;s<br>ou cibl&#233;s">Financing structured<br>and deployed</p>
+    </div>
+    <div class="stat-item" id="stat2">
+      <p class="stat-number">+300</p>
+      <p class="stat-label" data-en="Companies supported through<br>technical assistance"
+        data-fr="Entreprises<br>accompagn&#233;es">Companies supported through<br>technical
+        assistance</p>
+    </div>
+    <div class="stat-item" id="stat3">
+      <p class="stat-number">+10 000</p>
+      <p class="stat-label" data-en="Farmers reached across<br>our programmes"
+        data-fr="Agriculteurs<br>impact&#233;s">Farmers reached across<br>our programmes</p>
+    </div>
+    <div class="stat-item" id="stat4">
+      <p class="stat-number">4</p>
+      <p class="stat-label" data-en="Countries of intervention"
+        data-fr="Pays d'intervention">Countries of intervention</p>
+    </div>
+  </section>
+
+  <!-- §3 EXPERTISE LABEL -->
+  <div class="expertise-label" id="expLabel">
+    <p class="exp-headline" data-en="A rare combination of three disciplines, anchored in African market realities."
+      data-fr="Une combinaison rare de trois disciplines, ancr&#233;e dans les r&#233;alit&#233;s des march&#233;s africains.">
+      A rare combination of three disciplines, anchored in African market realities.</p>
+  </div>
+
+  <!-- §4 TROIS VALEURS -->
+  <section class="values-bloc">
+    <div class="values-grid" id="valuesGrid">
+      <div class="value-col">
+        <span class="val-num">I</span>
+        <h3 class="val-title" data-en="Corporate Finance" data-fr="Finance d&#8217;Entreprise">Corporate Finance</h3>
+        <p class="val-body"
+          data-en="Due diligence &amp; ESG. Valuation. Deal structuring. Financial modelling. M&amp;A advisory. Capital raising."
+          data-fr="Due diligence &amp; ESG. Valorisation. Structuration. Mod&eacute;lisation financi&egrave;re. Conseil M&amp;A. Lev&eacute;e de fonds.">
+          Due diligence &amp; ESG. Valuation. Deal structuring. Financial modelling. M&amp;A advisory. Capital raising.
+        </p>
+      </div>
+      <div class="value-col">
+        <span class="val-num">II</span>
+        <h3 class="val-title" data-en="Impact Investment" data-fr="Investissement &#224; Impact">Impact Investment</h3>
+        <p class="val-body"
+          data-en="Blended finance. Climate finance. Impact strategies. ESG measurement &amp; reporting. Investor sourcing. Fund structuring."
+          data-fr="Finance mixte. Finance climatique. Strat&eacute;gies d&apos;impact. Mesure &amp; reporting ESG. Identification d&apos;investisseurs. Structuration de fonds.">
+          Blended finance. Climate finance. Impact strategies. ESG measurement &amp; reporting. Investor sourcing. Fund
+          structuring.</p>
+      </div>
+      <div class="value-col">
+        <span class="val-num">III</span>
+        <h3 class="val-title" data-en="Value Chain Development" data-fr="D&#233;veloppement de Fili&#232;res">Value
+          Chain Development</h3>
+        <p class="val-body"
+          data-en="Technical assistance design and management. SME and producer organisation support. Market development. Quality management."
+          data-fr="Conception et gestion de l&apos;assistance technique. Appui aux PME et aux organisations de producteurs. D&eacute;veloppement des march&eacute;s. Gestion de la qualit&eacute;.">
+          Technical assistance design and management. SME and producer organisation support. Market development. Quality
+          management.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANAGING PARTNER -->
+  <section class="partner-bloc" id="partnerEl">
+    <div class="partner-photo" style="background:none;overflow:hidden;">
+      <img src="images/team/jean-elie-ngoran.jpg" alt="Jean Élie N'Goran"
+        style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(1.05) brightness(0.95);" />
+    </div>
+    <div class="partner-content">
+      <p class="partner-eyebrow" data-en="Managing Partner" data-fr="Associ&eacute; G&eacute;rant">Managing Partner</p>
+      <p class="partner-quote">
+        <span
+          data-en="&#8220;African agricultural value chains do not lack potential. They lack the financial architecture to unlock it.&#8221;"
+          data-fr="&#8220;Les fili&#232;res agricoles africaines ne manquent pas de potentiel. Il leur manque l&#8217;architecture financi&#232;re pour le lib&#233;rer.&#8221;">&#8220;African
+          agricultural value chains do not lack potential. They lack the financial architecture to unlock
+          it.&#8221;</span>
+      </p>
+      <p class="partner-body"
+        data-en="Africand was built on a precise observation: the gap between capital availability and capital deployment in African agro-industry is not a market failure, it is a structuring failure. We exist to close that gap, mandate by mandate, with documented results."
+        data-fr="Africand a &eacute;t&eacute; fond&eacute; sur une observation pr&eacute;cise : le foss&eacute; entre la disponibilit&eacute; des capitaux et leur d&eacute;ploiement dans l&apos;agro-industrie africaine n&apos;est pas un &eacute;chec de march&eacute;, c&apos;est un &eacute;chec de structuration. Nous existons pour combler ce foss&eacute;, mandat par mandat, avec des r&eacute;sultats document&eacute;s.">
+        Africand was built on a precise observation: the gap between capital availability
+        and capital deployment in African agro-industry is not a market failure,
+        it is a structuring failure. We exist to close that gap,
+        mandate by mandate, with documented results.
+      </p>
+      <div class="partner-sig">
+        <p class="partner-name">Jean &#201;lie N&#8217;Goran</p>
+        <p class="partner-title" data-en="Managing Partner, Africand Consulting, Abidjan"
+          data-fr="Associ&eacute; G&eacute;rant, Africand Consulting, Abidjan">Managing Partner, Africand Consulting,
+          Abidjan</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- §4 INSIGHTS -->
+  <section class="insights-bloc">
+
+    <div class="insights-header" id="insightsHeader">
+      <h2 class="insights-section-title" data-en="Our Insights" data-fr="Nos Publications">Our Insights</h2>
+      <p class="insights-section-sub" data-en="Monthly analysis on West African agro-industry financing"
+        data-fr="Analyses mensuelles sur le financement de l&#8217;agro-industrie en Afrique de l&#8217;Ouest">Monthly
+        analysis on West African agro-industry financing</p>
+    </div>
+
+    <div class="insights-grid">
+
+      <!-- Carte 1 — Opinion -->
+      <a href="insights/why-west-african-agro-industry-cant-access-dfi-capital.html" class="insight-card" id="icard1">
+        <div class="card-img"
+          style="background-image:url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80&auto=format&fit=crop')">
+        </div>
+        <div class="card-overlay overlay-opinion"></div>
+        <div class="card-content">
+          <div class="card-top">
+            <span class="card-tag">Opinion</span>
+            <div class="card-top-right">
+              <span class="card-readtime">6 min read</span>
+              <span class="card-lang">EN</span>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <h3 class="card-title" data-en="Why West African Agro-Industry Still Can't Access DFI Capital"
+              data-fr="Pourquoi l&apos;Agro-industrie Ouest-Africaine ne Peut Toujours Pas Acc&eacute;der aux Capitaux des IFD">
+              Why West African Agro-Industry Still Can't Access DFI Capital</h3>
+            <p class="card-author">Jean &#201;lie N&#8217;Goran<br><span data-en="Managing Partner, Africand Consulting"
+                data-fr="Associ&eacute; G&eacute;rant, Africand Consulting">Managing Partner, Africand Consulting</span>
+            </p>
+            <p class="card-date">June 2026</p>
+          </div>
+        </div>
+        <span class="card-arrow">&#8599;</span>
+      </a>
+
+      <!-- Carte 2 — Market Note -->
+      <a href="insights/agro-industry-financing-cote-divoire-2026.html" class="insight-card" id="icard2">
+        <div class="card-img"
+          style="background-image:url('https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=900&q=80&auto=format&fit=crop')">
+        </div>
+        <div class="card-overlay overlay-market"></div>
+        <div class="card-content">
+          <div class="card-top">
+            <span class="card-tag">Market Note</span>
+            <div class="card-top-right">
+              <span class="card-readtime">5 min read</span>
+              <span class="card-lang">EN &middot; FR</span>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <h3 class="card-title" data-en="Agro-Industry Financing in C&#244;te d&#8217;Ivoire: State of Play 2026"
+              data-fr="Financement de l&apos;Agro-industrie en C&ocirc;te d&apos;Ivoire : &Eacute;tat des Lieux 2026">
+              Agro-Industry Financing in C&#244;te d&#8217;Ivoire: State of Play 2026</h3>
+            <p class="card-author">Jean &#201;lie N&#8217;Goran<br><span data-en="Managing Partner, Africand Consulting"
+                data-fr="Associ&eacute; G&eacute;rant, Africand Consulting">Managing Partner, Africand Consulting</span>
+            </p>
+            <p class="card-date">May 2026</p>
+          </div>
+        </div>
+        <span class="card-arrow">&#8599;</span>
+      </a>
+
+      <!-- Carte 3 — Sector Note -->
+      <a href="insights/cashew-processing-gap-financing.html" class="insight-card" id="icard3">
+        <div class="card-img"
+          style="background-image:url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=900&q=80&auto=format&fit=crop')">
+        </div>
+        <div class="card-overlay overlay-sector"></div>
+        <div class="card-content">
+          <div class="card-top">
+            <span class="card-tag">Sector Note</span>
+            <div class="card-top-right">
+              <span class="card-readtime">7 min read</span>
+              <span class="card-lang">EN</span>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <h3 class="card-title" data-en="The Cashew Processing Gap: A Financing Perspective"
+              data-fr="Le D&eacute;ficit de Transformation du Cajou : Une Perspective de Financement">The Cashew
+              Processing Gap: A Financing Perspective</h3>
+            <p class="card-author">Jean &#201;lie N&#8217;Goran<br><span data-en="Managing Partner, Africand Consulting"
+                data-fr="Associ&eacute; G&eacute;rant, Africand Consulting">Managing Partner, Africand Consulting</span>
+            </p>
+            <p class="card-date">April 2026</p>
+          </div>
+        </div>
+        <span class="card-arrow">&#8599;</span>
+      </a>
+
+    </div>
+
+    <a href="insights.html" class="insights-viewall">
+      <span data-en="View all Insights" data-fr="Voir toutes les Publications">View all Insights</span>
+      &nbsp;<span>&#8594;</span>
+    </a>
+
+  </section>
+
+  <!-- LATEST TRANSACTION -->
+  <section class="latest-tx-bloc" id="latestTxEl">
+    <div class="ltx-left">
+      <p class="ltx-eyebrow" data-en="Active Mandate" data-fr="Mandat Actif">Active Mandate</p>
+      <span class="ltx-tag">Agriculture</span>
+      <h2 class="ltx-title" data-en="Cashew Value Chain Development"
+        data-fr="D&#233;veloppement de la Fili&#232;re Cajou">Cashew Value Chain Development</h2>
+      <ul class="ltx-points">
+        <li data-en="International market access" data-fr="Acc&egrave;s au march&eacute; international">International
+          market access</li>
+        <li data-en="Technical assistance programme structuring"
+          data-fr="Structuration d&apos;un programme d&apos;assistance technique">Technical assistance programme
+          structuring</li>
+        <li data-en="Active mandate, ongoing" data-fr="Mandat actif en cours">Active mandate, ongoing</li>
+      </ul>
+      <a href="projects.html" class="ltx-link"><span data-en="View Track Record"
+          data-fr="Voir le Bilan de Transactions">View Track Record</span> <span class="arrow">&#8594;</span></a>
+    </div>
+    <div class="ltx-meta">
+      <div class="ltx-meta-row">
+        <span class="ltx-meta-key" data-en="Geography" data-fr="G&eacute;ographie">Geography</span>
+        <span class="ltx-meta-val" data-en="West Africa" data-fr="Afrique de l&apos;Ouest">West Africa</span>
+      </div>
+      <div class="ltx-meta-row">
+        <span class="ltx-meta-key" data-en="Year" data-fr="Ann&eacute;e">Year</span>
+        <span class="ltx-meta-val">2026</span>
+      </div>
+      <div class="ltx-meta-row">
+        <span class="ltx-meta-key" data-en="Status" data-fr="Statut">Status</span>
+        <span class="ltx-meta-val" data-en="Active Mandate" data-fr="Mandat Actif">Active Mandate</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAREERS AT AFRICAND -->
+  <section class="careers-bloc" id="careersEl">
+    <div class="careers-photo"
+      style="background-image:url('images/js2.jpg')">
+    </div>
+    <div class="careers-content">
+      <p class="careers-eyebrow" data-en="Careers at Africand" data-fr="Carri&egrave;res chez Africand">Careers at
+        Africand</p>
+      <h2 class="careers-title" data-en="Build something<br><em>that matters.</em>"
+        data-fr="Construire quelque chose<br><em>qui compte.</em>">Build something<br>
+        <em>that matters.</em>
+      </h2>
+      <p class="careers-body"
+        data-en="We work at the intersection of finance, agriculture, and African economic development. We are a small team. The problems are hard. The impact is real and documented."
+        data-fr="Nous travaillons &agrave; l&apos;intersection de la finance, de l&apos;agriculture et du d&eacute;veloppement &eacute;conomique africain. Nous sommes une petite &eacute;quipe. Les probl&egrave;mes sont complexes. L&apos;impact est r&eacute;el et document&eacute;">
+        We work at the intersection of finance, agriculture,
+        and African economic development.
+        We are a small team. The problems are hard.
+        The impact is real and documented.
+      </p>
+      <a href="careers.html" class="careers-link">
+        <span data-en="View Open Positions" data-fr="Voir les Postes Ouverts">View Open Positions</span> <span
+          class="arrow">&#8594;</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- §6 CTA FINAL -->
+  <section class="cta-bloc">
+    <h2 class="cta-title" data-en="Ready to structure<br><em>your transaction?</em>"
+      data-fr="Pr&#234;t &#224; structurer<br><em>votre transaction&#160;?</em>">
+      Ready to structure<br>
+      <em>your transaction?</em>
+    </h2>
+    <div class="cta-row">
+      <a href="contact.html" class="cta-link">
+        <span data-en="Engage Us" data-fr="Nous Contacter">Engage Us</span> <span class="arrow">&#8594;</span>
+      </a>
+      <span class="cta-email">contact@africand.com</span>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">Africand Consulting</p>
+        <p class="footer-tagline" data-en="Financial &amp; Strategic Advisory · Abidjan"
+          data-fr="Conseil Financier &amp; Strat&#233;gique · Abidjan">Financial &amp; Strategic Advisory · Abidjan</p>
+        <p class="footer-contact-email"><a href="mailto:contact@africand.com">contact@africand.com</a></p>
+      </div>
+      <div class="footer-nav-col">
+        <p class="footer-col-label" data-en="Navigation" data-fr="Navigation">Navigation</p>
+        <ul class="footer-links">
+          <li><a href="approach.html" data-en="Approach" data-fr="Approche">Approach</a></li>
+          <li><a href="projects.html" data-en="Projects" data-fr="Projets">Projects</a></li>
+          <li><a href="services.html" data-en="Services" data-fr="Services">Services</a></li>
+          <li><a href="team.html" data-en="Team" data-fr="&#201;quipe">Team</a></li>
+          <li><a href="insights.html" data-en="Insights" data-fr="Publications">Insights</a></li>
+          <li><a href="careers.html" data-en="Careers" data-fr="Carri&#232;res">Careers</a></li>
+          <li><a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-addr-col">
+        <p class="footer-col-label" data-en="Addresses" data-fr="Adresses">Addresses</p>
+        <div class="footer-addr-item">
+          <p class="footer-addr-label" data-en="Operational Headquarters" data-fr="Si&#232;ge Op&#233;rationnel">
+            Operational Headquarters</p>
+          <p class="footer-addr-value">
+            Cocody Djorobité, CIE Base<br>
+            Corner of Salaï Boua Koffi Konan Street<br>
+            &amp; Bernadette Tahet Street<br>
+            Abidjan, Ivory Coast
+          </p>
+          <p class="footer-addr-note" data-en="Project coordination and advisory activities."
+            data-fr="Coordination de projets et activit&#233;s de conseil.">Project coordination and advisory
+            activities.</p>
+        </div>
+        <div class="footer-addr-item">
+          <p class="footer-addr-label" data-en="Institutional Address" data-fr="Adresse Institutionnelle">Institutional
+            Address</p>
+          <p class="footer-addr-value">
+            XL Building, 6th &amp; 7th Floor<br>
+            Republic Boulevard<br>
+            Plateau, Abidjan, Ivory Coast
+          </p>
+          <p class="footer-addr-note" data-en="Institutional and commercial correspondence."
+            data-fr="Correspondance institutionnelle et commerciale.">Institutional and commercial correspondence.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy" data-en="© 2025 Africand Consulting. All rights reserved."
+        data-fr="© 2025 Africand Consulting. Tous droits r&#233;serv&#233;s.">© 2025 Africand Consulting. All rights
+        reserved.</p>
+      <p class="footer-legal">contact@africand.com</p>
+    </div>
+  </footer>
+
+  <script>
+    // Language switcher
+    function setLang(lang) {
+      localStorage.setItem('lang', lang);
+      document.querySelectorAll('[data-en]').forEach(function (el) {
+        el.innerHTML = lang === 'fr' ? el.getAttribute('data-fr') : el.getAttribute('data-en');
+      });
+      document.querySelectorAll('.lang-btn').forEach(function (btn) {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+      });
+    }
+    (function () {
+      var saved = localStorage.getItem('lang') || 'en';
+      if (saved === 'fr') setLang('fr');
+    })();
+
+    // Nav: transparent on hero → solid as soon as user scrolls
+    (function () {
+      var nav = document.querySelector('nav');
+      function updateNav() {
+        if (window.scrollY > 40) {
+          nav.classList.add('nav--solid');
+        } else {
+          nav.classList.remove('nav--solid');
+        }
+      }
+      window.addEventListener('scroll', updateNav, { passive: true });
+      updateNav();
+    })();
+
+    // Burger
+    document.getElementById('burger').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    // Hero Slideshow
+    (function () {
+      var slides = document.querySelectorAll('.hero-slide');
+      if (slides.length === 0) return;
+      var current = 0;
+      setInterval(function () {
+        slides[current].classList.remove('active');
+        current = (current + 1) % slides.length;
+        slides[current].classList.add('active');
+      }, 6000);
+    })();
+
+    // Scroll reveal
+    var reveals = [
+      document.getElementById('stat1'),
+      document.getElementById('stat2'),
+      document.getElementById('stat3'),
+      document.getElementById('stat4'),
+      document.getElementById('expLabel'),
+      document.querySelectorAll('.value-col')[0],
+      document.querySelectorAll('.value-col')[1],
+      document.querySelectorAll('.value-col')[2],
+      document.getElementById('refEl'),
+      document.getElementById('partnerEl'),
+      document.getElementById('insightsHeader'),
+      document.getElementById('icard1'),
+      document.getElementById('icard2'),
+      document.getElementById('icard3'),
+      document.getElementById('latestTxEl'),
+      document.getElementById('careersEl')
+    ];
+
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e, i) {
+        if (e.isIntersecting) {
+          setTimeout(function () { e.target.classList.add('visible'); }, i * 100);
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    reveals.forEach(function (el) { if (el) obs.observe(el); });
+  </script>
+
+</body>
+
+</html>

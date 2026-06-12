@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selected Transactions — Africand Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />  <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Africand</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="approach.html" data-en="Approach" data-fr="Approche">Approach</a></li>
+      <li><a href="services.html" data-en="Services" data-fr="Services">Services</a></li>
+      <li><a href="projects.html" class="active" data-en="Projects" data-fr="Projets">Projects</a></li>
+      <li><a href="team.html" data-en="Team" data-fr="&#201;quipe">Team</a></li>
+      <li><a href="insights.html" data-en="Insights" data-fr="Publications">Insights</a></li>
+      <li><a href="careers.html" data-en="Careers" data-fr="Carri&#232;res">Careers</a></li>
+      <li><a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a></li>
+    </ul>
+    <button class="nav-burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+      <div class="lang-switch">
+      <button class="lang-toggle" id="langToggle" onclick="toggleLang()" aria-label="Switch language">
+        <svg class="lang-globe" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <span class="lang-current">EN</span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <p class="page-label" data-en="Track Record" data-fr="Bilan de Transactions">Track Record</p>
+    <h1 class="page-title" data-en="Documented mandates.<br><em>Verified results.</em>" data-fr="Mandats document&eacute;s.<br><em>R&eacute;sultats v&eacute;rifi&eacute;s.</em>">Documented mandates.<br>
+      <em>Verified results.</em>
+    </h1>
+    <p class="page-intro" data-en="Six mandates across transactions, blended finance, agricultural programmes, and climate finance. Every figure on this page is documented." data-fr="Six mandats couvrant des transactions, la finance mixte, des programmes agricoles et la finance climatique. Chaque chiffre sur cette page est document&eacute;">
+      Six mandates across transactions, blended finance,
+      agricultural programmes, and climate finance.
+      Every figure on this page is documented.
+    </p>
+  </header>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <span class="filter-label" data-en="Filter" data-fr="Filtrer">Filter</span>
+    <button class="filter-btn active" data-filter="all" data-en="All" data-fr="Tout">All</button>
+    <button class="filter-btn" data-filter="transaction" data-en="Transactions" data-fr="Transactions">Transactions</button>
+    <button class="filter-btn" data-filter="blended" data-en="Blended Finance" data-fr="Finance Mixte">Blended Finance</button>
+    <button class="filter-btn" data-filter="agriculture" data-en="Agriculture" data-fr="Agriculture">Agriculture</button>
+    <button class="filter-btn" data-filter="climate" data-en="Climate Finance" data-fr="Finance Climatique">Finance Climatique</button>
+  </div>
+
+  <!-- TRANSACTIONS -->
+  <div class="transactions-list" id="txList">
+
+    <!-- 1 -->
+    <div class="transaction-item" data-category="transaction">
+      <div class="tx-main">
+        <div class="tx-tags">
+          <span class="tx-type type-transaction">Transactions</span>
+        </div>
+        <h2 class="tx-title">Valorisation &amp; cession d'une laiterie et cessions de parts</h2>
+        <p class="tx-description">
+          Due diligence &amp; valorisation.
+          Stress scenarios.
+          Validation du comité d'investissement.
+          Réalisation de la transaction de sortie.
+        </p>
+      </div>
+      <div class="tx-meta">
+        <div class="tx-meta-row">
+          <span class="tx-meta-key">Géographie</span>
+          <span class="tx-meta-value">Afrique de l'Ouest</span>
+        </div>
+        <div class="tx-meta-row">
+          <span class="tx-meta-key">Année</span>
+          <span class="tx-meta-value">2022</span>
+        </div>
+        <div class="tx-meta-row">
+          <span class="tx-meta-key">Statut</span>
+          <span class="tx-meta-value tx-status closed">Réalisé</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="transaction-item" data-category="transaction">
+      <div class="tx-main">
+        <div class="tx-tags">
+          <span class="tx-type type-transaction">Transactions</span>
+        </div>
+        <h2 class="tx-title">Investissement dans une institution de microfinance</h2>
+        <p class="tx-description">
+          Due diligence &amp; valorisation.
+          Scénarios d'acquisition.
+          Préparation du dossier d'investissement.
+          Participation aux négociations.
+        </p>
+      </div>
+      <div class="tx-meta">
+        <div class="tx-meta-row">
+          <span class="tx-meta-key">Géographie</span>
+          <span class="tx-meta-value">Afrique de l'Ouest</span>
+        </div>
+        <div class="tx-meta-row">
+          <span class="tx-meta-key">Année</span>
+          <span class="tx-meta-value">2025</span>
+        </div>
+        <div class="tx-meta-row">
+          <span class="tx-meta-key">Statut</span>
+          <span class="tx-meta-value tx-status closed">Réalisé</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="transaction-item" data-category="blended">
+      <div class="tx-main">
+        <div class="tx-tags">
+          <span class="tx-type type-blended" data-en="Blended Finance" data-fr="Finance Mixte">Blended Finance</span>
+        </div>
+        <h2 class="tx-title">Entrepreneuriat des jeunes femmes</h2>
+        <p class="tx-description">
+          +80 entreprises incubées par an.
+          Conception d'un modèle de micro-investissement.
+          Préparation de dossier d'investissement.
+          Financement validé: 600 k€.
+        </p>
+      </div>
+      <div class="tx-meta">
+        <div class="tx-meta-row">
+          <span class="tx-meta-key">Géographie</span>
+          <span class="tx-meta-value">Afrique de l'Ouest</span>
+        </div>
+        <div class="tx-meta-row">
+          <span class="tx-meta-key">Période</span>
+          <span class="tx-meta-value">2024 – 2028</span>
+        </div>
+        <div class="tx-meta-row">
+          <span class="tx-meta-key">Statut</span>
+          <span class="tx-meta-value tx-status closed">En cours</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="transaction-item" data-category="agriculture">
+      <div class="tx-main">
+        <div class="tx-tags">
+          <span class="tx-type type-agriculture">Agriculture</span>
+        </div>
+        <h2 class="tx-title">Fonds chaînes de valeur agricoles locales pour cantines scolaires</h2>
+        <p class="tx-description">
+          Étude des filières riz et lait.
+          569 producteurs, 814 ha cultivés.
+          25 unités de transformation de paddy.
+          7 laiteries, 270 000 enfants bénéficiaires.
+          Taille cible du fonds: USD 110M.
+        </p>
+      </div>
+      <div class="tx-meta">
+        <div class="tx-meta-row">
+          <span class="tx-meta-key">Géographie</span>
+          <span class="tx-meta-value">Afrique de l'Ouest</span>
+        </div>
+        <div class="tx-meta-row">
+          <span class="tx-meta-key">Période</span>
+          <span class="tx-meta-value">2023 – 2024</span>
+        </div>
+        <div class="tx-meta-row">
+          <span class="tx-meta-key">Statut</span>
+          <span class="tx-meta-value tx-status closed">Réalisé</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="transaction-item" data-category="climate">
+      <div class="tx-main">
+        <div class="tx-tags">
+          <span class="tx-type type-climate">Finance Climatique</span>
+        </div>
+        <h2 class="tx-title">Programme d'adaptation climatique des petits producteurs</h2>
+        <p class="tx-description">
+          Quatre institutions de microfinance renforcées.
+          Développement d'un cadre incitatif de blended finance.
+          Cible: 3 500+ producteurs financés.
+          +USD 4M de financements octroyés.
+        </p>
+      </div>
+      <div class="tx-meta">
+        <div class="tx-meta-row">
+          <span class="tx-meta-key">Géographie</span>
+          <span class="tx-meta-value">Afrique de l'Ouest &amp; Australe</span>
+        </div>
+        <div class="tx-meta-row">
+          <span class="tx-meta-key">Période</span>
+          <span class="tx-meta-value">2025 – 2027</span>
+        </div>
+        <div class="tx-meta-row">
+          <span class="tx-meta-key">Statut</span>
+          <span class="tx-meta-value tx-status closed">En cours</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="transaction-item" data-category="agriculture">
+      <div class="tx-main">
+        <div class="tx-tags">
+          <span class="tx-type type-agriculture">Agriculture</span>
+        </div>
+        <h2 class="tx-title">Renforcement de la filière noix de cajou</h2>
+        <p class="tx-description">
+          Accès au marché international.
+          Structuration d'un programme d'assistance technique.
+          Mandat actif en cours.
+        </p>
+      </div>
+      <div class="tx-meta">
+        <div class="tx-meta-row">
+          <span class="tx-meta-key">Géographie</span>
+          <span class="tx-meta-value">Afrique de l'Ouest</span>
+        </div>
+        <div class="tx-meta-row">
+          <span class="tx-meta-key">Année</span>
+          <span class="tx-meta-value">2026</span>
+        </div>
+        <div class="tx-meta-row">
+          <span class="tx-meta-key">Statut</span>
+          <span class="tx-meta-value tx-status closed">Mandat actif</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- STATEMENT BREAK -->
+  <div class="statement-break" id="statementEl">
+    <p class="statement-text">
+      <span data-en="€115M+ structured and deployed.<br><em>Every figure on this page is documented.</em>" data-fr="115M€+ structurés et déployés.<br><em>Chaque chiffre sur cette page est documenté.</em>">€115M+ structured and deployed.<br>
+      <em>Every figure on this page is documented.</em>
+    </p>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <a href="contact.html" class="cta">
+      <span data-en="Discuss a Mandate" data-fr="Discuter d'un Mandat">Discuss a Mandate</span> <span class="cta-arrow">→</span>
+    </a>
+  </section>
+
+    <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">Africand Consulting</p>
+        <p class="footer-tagline" data-en="Financial &amp; Strategic Advisory · Abidjan" data-fr="Conseil Financier &amp; Strat&#233;gique · Abidjan">Financial &amp; Strategic Advisory · Abidjan</p>
+        <p class="footer-contact-email"><a href="mailto:contact@africand.com">contact@africand.com</a></p>
+      </div>
+      <div class="footer-nav-col">
+        <p class="footer-col-label" data-en="Navigation" data-fr="Navigation">Navigation</p>
+        <ul class="footer-links">
+          <li><a href="approach.html" data-en="Approach" data-fr="Approche">Approach</a></li>
+          <li><a href="projects.html" data-en="Projects" data-fr="Projets">Projects</a></li>
+          <li><a href="services.html" data-en="Services" data-fr="Services">Services</a></li>
+          <li><a href="team.html" data-en="Team" data-fr="&#201;quipe">Team</a></li>
+          <li><a href="insights.html" data-en="Insights" data-fr="Publications">Insights</a></li>
+          <li><a href="careers.html" data-en="Careers" data-fr="Carri&#232;res">Careers</a></li>
+          <li><a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-addr-col">
+        <p class="footer-col-label" data-en="Addresses" data-fr="Adresses">Addresses</p>
+        <div class="footer-addr-item">
+          <p class="footer-addr-label" data-en="Operational Headquarters" data-fr="Si&#232;ge Op&#233;rationnel">Operational Headquarters</p>
+          <p class="footer-addr-value">
+            Cocody Djorobité, CIE Base<br>
+            Corner of Salaï Boua Koffi Konan Street<br>
+            &amp; Bernadette Tahet Street<br>
+            Abidjan, Ivory Coast
+          </p>
+          <p class="footer-addr-note" data-en="Project coordination and advisory activities." data-fr="Coordination de projets et activit&#233;s de conseil.">Project coordination and advisory activities.</p>
+        </div>
+        <div class="footer-addr-item">
+          <p class="footer-addr-label" data-en="Institutional Address" data-fr="Adresse Institutionnelle">Institutional Address</p>
+          <p class="footer-addr-value">
+            XL Building, 6th &amp; 7th Floor<br>
+            Republic Boulevard<br>
+            Plateau, Abidjan, Ivory Coast
+          </p>
+          <p class="footer-addr-note" data-en="Institutional and commercial correspondence." data-fr="Correspondance institutionnelle et commerciale.">Institutional and commercial correspondence.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy" data-en="© 2025 Africand Consulting. All rights reserved." data-fr="© 2025 Africand Consulting. Tous droits r&#233;serv&#233;s.">© 2025 Africand Consulting. All rights reserved.</p>
+      <p class="footer-legal">contact@africand.com</p>
+    </div>
+  </footer>
+
+  <script>
+    // Language switcher
+    function setLang(lang) {
+      localStorage.setItem('lang', lang);
+      document.querySelectorAll('[data-en]').forEach(function(el) {
+        el.innerHTML = lang === 'fr' ? el.getAttribute('data-fr') : el.getAttribute('data-en');
+      });
+      document.querySelectorAll('.lang-btn').forEach(function(btn) {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+      });
+    }
+    (function() {
+      var saved = localStorage.getItem('lang') || 'en';
+      if (saved === 'fr') setLang('fr');
+    })();
+
+    // Burger
+    document.getElementById('burger').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    // Scroll reveal
+    const allReveal = document.querySelectorAll('.transaction-item, #statementEl');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 60);
+      });
+    }, { threshold: 0.08 });
+    allReveal.forEach(el => obs.observe(el));
+
+    // Filter
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const txItems = document.querySelectorAll('.transaction-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        txItems.forEach(item => {
+          const show = filter === 'all' || item.dataset.category === filter;
+          item.style.display = show ? 'grid' : 'none';
+          if (show) setTimeout(() => item.classList.add('visible'), 60);
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
