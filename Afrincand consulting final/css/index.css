@@ -125,7 +125,9 @@ nav.nav--solid .nav-burger span {
 .hero {
   min-height: 100vh;
   padding: calc(72px + 100px) 80px 96px;
-  background: #04090F;
+  background:
+    linear-gradient(to right, rgba(10, 22, 40, 0.72) 0%, rgba(10, 22, 40, 0.40) 100%),
+    url('../images/hero-farming.jpg') center / cover no-repeat;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -213,7 +215,7 @@ nav.nav--solid .nav-burger span {
   font-weight: 400;
   letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.80);
   margin-bottom: 48px;
   display: flex;
   align-items: center;
@@ -262,7 +264,7 @@ nav.nav--solid .nav-burger span {
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.06em;
-  color: rgba(255, 255, 255, 0.42);
+  color: rgba(255, 255, 255, 0.85);
   line-height: 1.75;
   max-width: 400px;
   margin-bottom: 52px;
@@ -479,7 +481,7 @@ nav.nav--solid .nav-burger span {
 /* ── §2 CHIFFRES CLÉS ──────────────────────────────────── */
 .stats-bloc {
   padding: 72px 80px;
-  background: var(--navy);
+  background: #F0F4F8;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
@@ -487,7 +489,7 @@ nav.nav--solid .nav-burger span {
 
 .stat-item {
   padding: 0 40px;
-  border-right: 1px solid rgba(255, 255, 255, 0.12);
+  border-right: 1px solid rgba(10, 22, 40, 0.12);
   opacity: 0;
   transform: translateY(12px);
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -510,7 +512,7 @@ nav.nav--solid .nav-burger span {
   font-family: var(--font-serif);
   font-weight: 400;
   font-size: clamp(36px, 4vw, 52px);
-  color: var(--white);
+  color: var(--navy);
   line-height: 1;
   margin-bottom: 10px;
   letter-spacing: -0.02em;
@@ -520,7 +522,7 @@ nav.nav--solid .nav-burger span {
   font-family: var(--font-sans);
   font-size: 12px;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--grey-light);
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -738,20 +740,20 @@ nav.nav--solid .nav-burger span {
   inset: 0;
   background-size: cover;
   background-position: center;
-  filter: grayscale(0.65) brightness(0.42) contrast(1.05);
+  filter: grayscale(0.20) brightness(0.60) contrast(1.05);
   transition: transform 0.5s ease, filter 0.4s ease;
 }
 
 .insight-card:hover .card-img {
   transform: scale(1.025);
-  filter: grayscale(0.55) brightness(0.5) contrast(1.05);
+  filter: grayscale(0.10) brightness(0.70) contrast(1.05);
 }
 
 /* Overlay couleur selon type */
 .card-overlay {
   position: absolute;
   inset: 0;
-  opacity: 0.78;
+  opacity: 0.55;
   transition: opacity 0.35s ease;
 }
 
@@ -929,7 +931,7 @@ nav.nav--solid .nav-burger span {
   aspect-ratio: 3/4;
   background-size: cover;
   background-position: center top;
-  filter: grayscale(1) contrast(1.05) brightness(0.96);
+  filter: grayscale(0) contrast(1.02) brightness(1.0);
 }
 
 .partner-content {
@@ -1369,7 +1371,7 @@ nav.nav--solid .nav-burger span {
   }
 
   .stat-item:nth-child(odd) {
-    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    border-right: 1px solid rgba(10, 22, 40, 0.12);
     padding-right: 40px;
   }
 
