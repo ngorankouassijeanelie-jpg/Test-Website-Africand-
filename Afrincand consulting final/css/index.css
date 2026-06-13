@@ -44,7 +44,7 @@ nav {
   justify-content: space-between;
   padding: 0 80px;
   height: 72px;
-  border-bottom: 1px solid rgba(107, 26, 42, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   transition: background 0.4s ease, border-color 0.4s ease;
 }
 
@@ -123,30 +123,29 @@ nav.nav--solid .nav-burger span {
 
 /* ── §1 HERO — M&A PREMIUM ──────────────────────────────── */
 .hero {
-  min-height: 100vh;
-  padding: calc(72px + 100px) 80px 96px;
-  background:
-    linear-gradient(to right, rgba(10, 22, 40, 0.72) 0%, rgba(10, 22, 40, 0.40) 100%),
-    url('../images/hero-farming.jpg') center / cover no-repeat;
+  min-height: 80vh;
+  padding: calc(72px + 80px) 80px 80px;
+  background: #0B4DA1;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-end;
   position: relative;
   overflow: hidden;
   gap: 64px;
 }
 
-/* Ligne institutionnelle sous la nav */
+/* Lignes de colonnes verticales — style institutionnel */
 .hero::before {
   content: '';
   position: absolute;
-  top: 72px;
-  left: 80px;
-  right: 80px;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.07);
-  z-index: 10;
+  inset: 72px 0 0 0;
+  background-image:
+    linear-gradient(to right, transparent calc(25% - 1px), rgba(255,255,255,0.13) calc(25% - 1px), rgba(255,255,255,0.13) 25%, transparent 25%),
+    linear-gradient(to right, transparent calc(50% - 1px), rgba(255,255,255,0.13) calc(50% - 1px), rgba(255,255,255,0.13) 50%, transparent 50%),
+    linear-gradient(to right, transparent calc(75% - 1px), rgba(255,255,255,0.13) calc(75% - 1px), rgba(255,255,255,0.13) 75%, transparent 75%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 /* Slideshow background */
@@ -242,7 +241,6 @@ nav.nav--solid .nav-burger span {
   letter-spacing: -0.02em;
   color: #FFFFFF;
   margin-bottom: 40px;
-  text-shadow: 0 2px 40px rgba(0, 0, 0, 0.6);
   opacity: 0;
   animation: heroTitleReveal 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.35s forwards;
 }
