@@ -56,7 +56,7 @@ nav.nav--solid {
 .nav-logo {
   font-family: var(--font-serif);
   font-weight: 600;
-  font-size: 22px;
+  font-size: 24px;
   letter-spacing: 0.28em;
   color: #FFFFFF;
   text-decoration: none;
@@ -209,7 +209,7 @@ nav.nav--solid .nav-burger span {
 
 .hero-taglines p {
   font-family: var(--font-sans);
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.70);
   line-height: 1.8;
@@ -281,7 +281,7 @@ nav.nav--solid .nav-burger span {
 
 .has-sub {
   font-family: var(--font-sans);
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.50);
   line-height: 1.6;
@@ -394,7 +394,7 @@ nav.nav--solid .nav-burger span {
 .hrc-title {
   font-family: var(--font-serif);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.82);
   margin-bottom: 14px;
@@ -538,7 +538,7 @@ nav.nav--solid .nav-burger span {
 
 .stat-label {
   font-family: var(--font-sans);
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   color: var(--grey-light);
   line-height: 1.5;
@@ -571,7 +571,7 @@ nav.nav--solid .nav-burger span {
 
 .exp-sub {
   font-family: var(--font-sans);
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 400;
   color: var(--grey-light);
 }
@@ -615,7 +615,7 @@ nav.nav--solid .nav-burger span {
 .val-num {
   display: block;
   font-family: var(--font-serif);
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 400;
   letter-spacing: 0.1em;
   color: var(--bordeaux);
@@ -625,7 +625,7 @@ nav.nav--solid .nav-burger span {
 .val-title {
   font-family: var(--font-serif);
   font-weight: 400;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 1.2;
   color: var(--navy);
   margin-bottom: 16px;
@@ -633,7 +633,7 @@ nav.nav--solid .nav-burger span {
 
 .val-body {
   font-family: var(--font-sans);
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 400;
   color: var(--grey-light);
   line-height: 1.75;
@@ -681,7 +681,7 @@ nav.nav--solid .nav-burger span {
 .ref-text {
   font-family: var(--font-serif);
   font-weight: 400;
-  font-size: 18px;
+  font-size: 22px;
   color: var(--navy);
   line-height: 1.4;
 }
@@ -720,7 +720,7 @@ nav.nav--solid .nav-burger span {
 
 .insights-section-sub {
   font-family: var(--font-sans);
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 400;
   color: var(--grey-light);
   line-height: 1.6;
@@ -851,7 +851,7 @@ nav.nav--solid .nav-burger span {
 .card-title {
   font-family: var(--font-serif);
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
   color: #FFFFFF;
   line-height: 1.25;
   display: -webkit-box;
@@ -871,7 +871,7 @@ nav.nav--solid .nav-burger span {
 
 .card-date {
   font-family: var(--font-sans);
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.55);
 }
@@ -881,7 +881,7 @@ nav.nav--solid .nav-burger span {
   position: absolute;
   bottom: 24px;
   right: 24px;
-  font-size: 16px;
+  font-size: 20px;
   color: rgba(255, 255, 255, 0.7);
   z-index: 2;
   transition: transform 0.25s ease, color 0.25s ease;
@@ -903,7 +903,7 @@ nav.nav--solid .nav-burger span {
   margin-top: 48px;
   text-align: center;
   font-family: var(--font-sans);
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 400;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -991,7 +991,7 @@ nav.nav--solid .nav-burger span {
 
 .partner-body {
   font-family: var(--font-sans);
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 400;
   color: var(--grey-light);
   line-height: 1.8;
@@ -1007,14 +1007,14 @@ nav.nav--solid .nav-burger span {
 .partner-name {
   font-family: var(--font-serif);
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
   color: var(--navy);
   margin-bottom: 4px;
 }
 
 .partner-title {
   font-family: var(--font-sans);
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.1em;
   color: var(--grey-light);
@@ -1089,7 +1089,7 @@ nav.nav--solid .nav-burger span {
 
 .ltx-points li {
   font-family: var(--font-sans);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   color: var(--grey-light);
   line-height: 1.7;
@@ -1160,7 +1160,7 @@ nav.nav--solid .nav-burger span {
 .ltx-meta-val {
   font-family: var(--font-serif);
   font-weight: 400;
-  font-size: 17px;
+  font-size: 19px;
   color: var(--navy);
 }
 
@@ -1233,7 +1233,7 @@ nav.nav--solid .nav-burger span {
 
 .careers-body {
   font-family: var(--font-sans);
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.75;
@@ -1321,7 +1321,7 @@ nav.nav--solid .nav-burger span {
 
 .cta-email {
   font-family: var(--font-sans);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.55);
 }
@@ -1530,7 +1530,7 @@ nav.nav--solid .nav-burger span {
   .nav-links.open a {
     display: block;
     padding: 16px 0;
-    font-size: 13px;
+    font-size: 17px;
     color: rgba(255, 255, 255, 0.8);
   }
 
@@ -1569,7 +1569,7 @@ nav.nav--solid .nav-burger span {
   }
 
   .hero-sub {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 40px;
   }
 
@@ -1691,7 +1691,7 @@ nav.nav--solid .nav-burger span {
   }
 
   .card-title {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .insights-viewall {
@@ -1732,7 +1732,7 @@ footer {
 .footer-logo {
   font-family: var(--font-serif);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 22px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--white);
@@ -1741,7 +1741,7 @@ footer {
 
 .footer-tagline {
   font-family: var(--font-sans);
-  font-size: 12px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.65);
   line-height: 1.7;
 }
@@ -1752,7 +1752,7 @@ footer {
 
 .footer-contact-email a {
   font-family: var(--font-sans);
-  font-size: 12px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.65);
   text-decoration: none;
 }
@@ -1794,7 +1794,7 @@ footer ul.footer-links li {
 
 footer ul.footer-links li a {
   font-family: var(--font-sans);
-  font-size: 13px;
+  font-size: 17px;
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   display: block;
@@ -1831,7 +1831,7 @@ footer ul.footer-links li a:hover {
 
 .footer-addr-value {
   font-family: var(--font-sans);
-  font-size: 12px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.9;
 }
