@@ -126,7 +126,7 @@ nav.nav--solid .nav-burger span {
 .hero {
   min-height: 88vh;
   padding: calc(72px + 72px) 80px 72px;
-  background: #0A1628;
+  background: #1058B0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: end;

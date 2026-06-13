@@ -23,7 +23,7 @@
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       background: var(--navy);
       display: flex; align-items: center; justify-content: space-between;
-      padding: 0 64px; height: 72px;
+      padding: 0 80px; height: 72px;
       border-bottom: var(--rule);
     }
     .nav-logo {
