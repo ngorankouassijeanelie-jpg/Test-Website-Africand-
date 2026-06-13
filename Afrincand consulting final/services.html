@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="description" content="M&A advisory, financial structuring, due diligence and capacity building for agro-industrial operators across West Africa." />
   <meta property="og:type"        content="website" />
   <meta property="og:title"       content="Services — Africand Consulting" />
@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/nav-mobile.css">
 </head>
 <body>
 
@@ -26,10 +27,16 @@
       <li><a href="approach.html" data-en="Approach" data-fr="Approche">Approach</a></li>
       <li><a href="projects.html" data-en="Projects" data-fr="Projets">Projects</a></li>
       <li><a href="services.html" class="active" data-en="Services" data-fr="Services">Services</a></li>
-      <li><a href="team.html" data-en="Team" data-fr="&#201;quipe">Team</a></li>
       <li><a href="insights.html" data-en="Insights" data-fr="Publications">Insights</a></li>
       <li><a href="careers.html" data-en="Careers" data-fr="Carri&#232;res">Careers</a></li>
       <li><a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a></li>
+      <li class="nav-lang-mobile">
+        <button class="nav-lang-btn" onclick="toggleLang()" aria-label="Switch language">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span data-en="Language" data-fr="Langue">Language</span>
+          <span class="lang-current-mobile">EN</span>
+        </button>
+      </li>
     </ul>
     <button class="nav-burger" id="burger" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -72,7 +79,7 @@
           <li data-en="Portfolio monitoring" data-fr="Suivi de portefeuille">Portfolio monitoring</li>
           <li data-en="Exit strategies" data-fr="Strat&eacute;gies de sortie">Exit strategies</li>
         </ul>
-        <p class="meta-duration">Blended Finance · Agro-industry</p>
+        <p class="meta-duration" data-en="Blended Finance · Agro-industry" data-fr="Finance Mixte · Agro-industrie">Blended Finance · Agro-industry</p>
       </div>
     </div>
 
@@ -97,7 +104,7 @@
           <li data-en="Programme management" data-fr="Gestion de programmes">Programme management</li>
           <li data-en="Reporting &amp; evaluation" data-fr="Reporting &amp; &eacute;valuation">Reporting &amp; evaluation</li>
         </ul>
-        <p class="meta-duration">Advisory · Structuring · Monitoring</p>
+        <p class="meta-duration" data-en="Advisory · Structuring · Monitoring" data-fr="Conseil · Structuration · Suivi">Advisory · Structuring · Monitoring</p>
       </div>
     </div>
 
@@ -121,7 +128,7 @@
           <li data-en="Sustainable finance" data-fr="Finance durable">Sustainable finance</li>
           <li data-en="Institutional transformation" data-fr="Transformation institutionnelle">Institutional transformation</li>
         </ul>
-        <p class="meta-duration">Rural Finance · Risk · Transformation</p>
+        <p class="meta-duration" data-en="Rural Finance · Risk · Transformation" data-fr="Finance Rurale · Risque · Transformation">Rural Finance · Risk · Transformation</p>
       </div>
     </div>
 
@@ -146,7 +153,7 @@
           <li data-en="Commercial &amp; export development" data-fr="D&eacute;veloppement commercial &amp; export">Commercial &amp; export development</li>
           <li data-en="Technical assistance" data-fr="Assistance technique">Technical assistance</li>
         </ul>
-        <p class="meta-duration">M&amp;A · Financing · Growth Strategy</p>
+        <p class="meta-duration" data-en="M&amp;A · Financing · Growth Strategy" data-fr="M&amp;A · Financement · Stratégie de Croissance">M&amp;A · Financing · Growth Strategy</p>
       </div>
     </div>
 
@@ -172,7 +179,6 @@
           <li><a href="approach.html" data-en="Approach" data-fr="Approche">Approach</a></li>
           <li><a href="projects.html" data-en="Projects" data-fr="Projets">Projects</a></li>
           <li><a href="services.html" data-en="Services" data-fr="Services">Services</a></li>
-          <li><a href="team.html" data-en="Team" data-fr="&#201;quipe">Team</a></li>
           <li><a href="insights.html" data-en="Insights" data-fr="Publications">Insights</a></li>
           <li><a href="careers.html" data-en="Careers" data-fr="Carri&#232;res">Careers</a></li>
           <li><a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a></li>

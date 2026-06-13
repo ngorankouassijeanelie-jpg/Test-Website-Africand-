@@ -17,7 +17,7 @@
     }
     .nav-logo { font-family: var(--font-serif); font-weight: 600; font-size: 22px; letter-spacing: 0.28em; color: var(--navy); text-decoration: none; text-transform: uppercase; transition: color 0.4s ease; opacity: 1; }
     .nav-links { display: flex; gap: 44px; list-style: none; }
-    .nav-links a { font-family: var(--font-sans); font-size: 11px; font-weight: 400; letter-spacing: 0.13em; text-transform: uppercase; color: #3A3A3A; text-decoration: none; transition: color 0.2s; }
+    .nav-links a { font-family: var(--font-sans); font-size: 16px; font-weight: 400; letter-spacing: 0.13em; text-transform: uppercase; color: #3A3A3A; text-decoration: none; transition: color 0.2s; }
     .nav-links a:hover { color: var(--navy); }
     .nav-burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
     .nav-burger span { display: block; width: 22px; height: 1px; background: var(--navy); }
@@ -200,47 +200,47 @@
       footer { padding: 56px 40px 40px; }
     }
     @media (max-width: 768px) {
-      nav { padding: 0 24px; height: 64px; }
+      nav { padding: 0 20px; height: 60px; }
       .nav-links { display: none; }
-      .nav-links.open { display: flex; flex-direction: column; gap: 0; position: fixed; top: 64px; left: 0; right: 0; background: var(--white); padding: 32px 24px; border-bottom: var(--rule); }
+      .nav-links.open { display: flex; flex-direction: column; gap: 0; position: fixed; top: 60px; left: 0; right: 0; background: var(--white); padding: 32px 24px; border-bottom: var(--rule); }
       .nav-links.open li { border-bottom: var(--sep); }
-      .nav-links.open a { display: block; padding: 16px 0; font-size: 13px; }
+      .nav-links.open a { display: block; padding: 18px 0; font-size: 16px; min-height: 44px; }
       .nav-burger { display: flex; }
       .back-link { padding-top: 88px; padding-left: 24px; }
       .job-header { padding: 32px 24px 56px; }
       .job-meta { gap: 24px; }
-      .job-description { padding: 56px 24px; }
-      .form-panel { padding: 56px 24px; }
-      footer { padding: 48px 24px 32px; }
+      .job-description { padding: 48px 20px; }
+      .form-panel { padding: 48px 20px env(safe-area-inset-bottom, 48px); }
+      footer { padding: 48px 20px env(safe-area-inset-bottom, 32px); }
     }
   
     /* ── FOOTER ──────────────────────────────────────────────── */
-    footer { background: var(--navy); padding: 72px 120px; border-top: var(--rule); position: relative; z-index: 1; }
+    footer { background: #1C1C1C; padding: 72px 120px; border-top: var(--rule); position: relative; z-index: 1; }
     .footer-inner { display: grid; grid-template-columns: 1fr 1fr 2fr; gap: 64px; align-items: start; }
-    .footer-logo { font-family: var(--font-serif); font-weight: 500; font-size: 18px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--white); margin-bottom: 12px; }
-    .footer-tagline { font-family: var(--font-sans); font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.7; }
+    .footer-logo { font-family: var(--font-serif); font-weight: 500; font-size: 22px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--white); margin-bottom: 12px; }
+    .footer-tagline { font-family: var(--font-sans); font-size: 16px; color: rgba(255,255,255,0.65); line-height: 1.7; }
     .footer-contact-email { margin-top: 16px; }
-    .footer-contact-email a { font-family: var(--font-sans); font-size: 12px; color: rgba(255,255,255,0.65); text-decoration: none; }
+    .footer-contact-email a { font-family: var(--font-sans); font-size: 16px; color: rgba(255,255,255,0.65); text-decoration: none; }
     .footer-contact-email a:hover { color: var(--white); }
     .footer-col-label { font-family: var(--font-sans); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 20px; display: block; }
     .footer-nav-col { position: static; background: transparent; border: none; height: auto; display: block; padding: 0; }
     footer ul.footer-links { list-style: none; padding: 0; margin: 0; display: block; }
     footer ul.footer-links li { display: block; border: none; }
-    footer ul.footer-links li a { font-family: var(--font-sans); font-size: 13px; color: rgba(255,255,255,0.8); text-decoration: none; display: block; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.08); transition: color 0.2s; background: transparent; letter-spacing: 0.05em; }
+    footer ul.footer-links li a { font-family: var(--font-sans); font-size: 17px; color: rgba(255,255,255,0.8); text-decoration: none; display: block; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.08); transition: color 0.2s; background: transparent; letter-spacing: 0.05em; }
     footer ul.footer-links li:first-child a { border-top: 1px solid rgba(255,255,255,0.08); }
     footer ul.footer-links li a:hover { color: var(--white); }
     .footer-addr-col { display: flex; flex-direction: column; gap: 36px; }
     .footer-addr-label { font-family: var(--font-sans); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 8px; display: block; }
-    .footer-addr-value { font-family: var(--font-sans); font-size: 12px; color: rgba(255,255,255,0.8); line-height: 1.9; }
-    .footer-addr-note { font-family: var(--font-sans); font-size: 11px; color: rgba(255,255,255,0.4); line-height: 1.5; margin-top: 6px; font-style: italic; }
+    .footer-addr-value { font-family: var(--font-sans); font-size: 16px; color: rgba(255,255,255,0.8); line-height: 1.9; }
+    .footer-addr-note { font-family: var(--font-sans); font-size: 16px; color: rgba(255,255,255,0.4); line-height: 1.5; margin-top: 6px; font-style: italic; }
     .footer-bottom { margin-top: 56px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center; }
-    .footer-copy, .footer-legal { font-family: var(--font-sans); font-size: 11px; color: rgba(255,255,255,0.5); }
+    .footer-copy, .footer-legal { font-family: var(--font-sans); font-size: 16px; color: rgba(255,255,255,0.5); }
     @media (max-width: 1024px) {
       footer { padding: 64px 40px !important; }
       .footer-inner { grid-template-columns: 1fr 1fr !important; gap: 40px !important; }
     }
     @media (max-width: 768px) {
-      footer { padding: 56px 24px !important; }
+      footer { padding: 48px 20px env(safe-area-inset-bottom, 32px); }
       .footer-inner { grid-template-columns: 1fr !important; gap: 36px !important; }
       .footer-bottom { flex-direction: column !important; gap: 8px !important; margin-top: 40px !important; }
     }

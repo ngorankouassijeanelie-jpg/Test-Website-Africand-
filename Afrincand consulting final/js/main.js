@@ -11,8 +11,10 @@
     document.querySelectorAll('[data-en]').forEach(function (el) {
       el.innerHTML = lang === 'fr' ? el.getAttribute('data-fr') : el.getAttribute('data-en');
     });
-    var langEl = document.querySelector('.lang-current');
-    if (langEl) langEl.textContent = lang.toUpperCase();
+    // Sync both lang indicators (navbar + mobile menu)
+    document.querySelectorAll('.lang-current, .lang-current-mobile').forEach(function (el) {
+      el.textContent = lang.toUpperCase();
+    });
   }
 
   window.toggleLang = function () {
@@ -47,12 +49,12 @@
     '[data-reveal]',
     '.method-step', '.value-col', '.insight-item',
     '.profile-lead', '.profile-secondary',
-    '.desc-section', '.criteria-item', '.position-item',
+    '.desc-section', '.criteria-item', '.position-item', '.service-item',
     '.transaction-item', '#statementEl',
     '[id^="stat"]', '[id^="icard"]', '[id^="ds"]',
     '#expLabel', '#refEl', '#partnerEl',
     '#insightsHeader', '#latestTxEl', '#careersEl',
-    '#differenceEl', '#stmtEl'
+    '#differenceEl', '#stmtEl', '#specEl'
   ].join(', ');
 
   var reveals = document.querySelectorAll(revealSelectors);

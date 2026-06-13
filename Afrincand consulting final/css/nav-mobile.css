@@ -1,0 +1,156 @@
+/* ══════════════════════════════════════════════════════
+   NAV MOBILE — Africand Consulting
+   Fichier partagé : inclus dans toutes les pages
+   Breakpoint : ≤ 768px
+   • Logo + Burger uniquement dans la barre
+   • Langue dans le menu hamburger (bas de liste)
+   • Touch targets ≥ 44px (Apple HIG)
+   • Safe areas iOS (notch / Dynamic Island)
+══════════════════════════════════════════════════════ */
+
+/* ── Desktop : cacher les éléments mobile-only ── */
+.nav-lang-mobile { display: none !important; }
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+
+  /* Barre nav : logo + burger seulement */
+  nav {
+    padding: 0 20px !important;
+    height: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  /* Logo */
+  .nav-logo {
+    order: 1;
+    font-size: 20px !important;
+  }
+
+  /* Cacher le switch langue de la barre */
+  .lang-switch {
+    display: none !important;
+  }
+
+  /* Burger — toujours visible, à droite */
+  .nav-burger {
+    order: 2;
+    display: flex !important;
+    margin-left: auto;
+  }
+
+  /* Menu déroulant */
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex !important;
+    flex-direction: column;
+    gap: 0;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    z-index: 200;
+    padding: 8px 0 env(safe-area-inset-bottom, 24px);
+  }
+
+  /* Items du menu */
+  .nav-links li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .nav-links a {
+    display: block !important;
+    padding: 18px 24px !important;
+    font-size: 16px !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase;
+    min-height: 44px;
+    color: rgba(255, 255, 255, 0.85) !important;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #FFFFFF !important;
+  }
+
+  /* Item langue — en bas du menu, séparé */
+  .nav-lang-mobile {
+    display: flex !important;
+    align-items: center;
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-bottom: none !important;
+  }
+
+  .nav-lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 20px 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter', Helvetica Neue, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.55);
+    min-height: 44px;
+    transition: color 0.2s;
+  }
+
+  .nav-lang-btn:hover { color: #FFFFFF; }
+
+  .nav-lang-btn .lang-current-mobile {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 13px;
+    letter-spacing: 0.18em;
+  }
+
+  /* Pages fond blanc : adapter couleurs menu */
+  nav:not(.nav-dark) .nav-links.open {
+    background: #FFFFFF;
+  }
+  nav:not(.nav-dark) .nav-links li {
+    border-bottom-color: rgba(0, 0, 0, 0.07);
+  }
+  nav:not(.nav-dark) .nav-links a {
+    color: rgba(26, 26, 26, 0.8) !important;
+  }
+  nav:not(.nav-dark) .nav-links a:hover,
+  nav:not(.nav-dark) .nav-links a.active {
+    color: #0A1628 !important;
+  }
+  nav:not(.nav-dark) .nav-lang-mobile {
+    border-top-color: rgba(0, 0, 0, 0.08) !important;
+  }
+  nav:not(.nav-dark) .nav-lang-btn {
+    color: rgba(26, 26, 26, 0.45);
+  }
+  nav:not(.nav-dark) .nav-lang-btn .lang-current-mobile {
+    color: rgba(26, 26, 26, 0.75);
+  }
+
+  /* Pages fond sombre (contact, hero) : garder blanc */
+  nav.nav-dark .nav-links.open {
+    background: #1C1C1C;
+  }
+}
+
+@media (max-width: 480px) {
+  nav { padding: 0 16px !important; }
+  .nav-links a { padding: 16px 16px !important; font-size: 15px !important; }
+  .nav-lang-btn { padding: 18px 16px; }
+}

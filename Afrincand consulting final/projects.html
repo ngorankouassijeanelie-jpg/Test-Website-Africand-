@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="description" content="Selected mandates and transactions advised by Africand Consulting across agro-industrial value chains in West Africa." />
   <meta property="og:type"        content="website" />
   <meta property="og:title"       content="Projects — Africand Consulting" />
@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/nav-mobile.css">
 </head>
 <body>
 
@@ -24,12 +25,18 @@
     <a href="index.html" class="nav-logo">Africand</a>
     <ul class="nav-links" id="navLinks">
       <li><a href="approach.html" data-en="Approach" data-fr="Approche">Approach</a></li>
-      <li><a href="services.html" data-en="Services" data-fr="Services">Services</a></li>
       <li><a href="projects.html" class="active" data-en="Projects" data-fr="Projets">Projects</a></li>
-      <li><a href="team.html" data-en="Team" data-fr="&#201;quipe">Team</a></li>
+      <li><a href="services.html" data-en="Services" data-fr="Services">Services</a></li>
       <li><a href="insights.html" data-en="Insights" data-fr="Publications">Insights</a></li>
       <li><a href="careers.html" data-en="Careers" data-fr="Carri&#232;res">Careers</a></li>
       <li><a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a></li>
+      <li class="nav-lang-mobile">
+        <button class="nav-lang-btn" onclick="toggleLang()" aria-label="Switch language">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span data-en="Language" data-fr="Langue">Language</span>
+          <span class="lang-current-mobile">EN</span>
+        </button>
+      </li>
     </ul>
     <button class="nav-burger" id="burger" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -71,28 +78,25 @@
     <div class="transaction-item" data-category="transaction">
       <div class="tx-main">
         <div class="tx-tags">
-          <span class="tx-type type-transaction">Transactions</span>
+          <span class="tx-type type-transaction" data-en="Transactions" data-fr="Transactions">Transactions</span>
         </div>
-        <h2 class="tx-title">Valorisation &amp; cession d'une laiterie et cessions de parts</h2>
-        <p class="tx-description">
-          Due diligence &amp; valorisation.
-          Stress scenarios.
-          Validation du comité d'investissement.
-          Réalisation de la transaction de sortie.
+        <h2 class="tx-title" data-en="Valuation &amp; disposal of a dairy and share transfers" data-fr="Valorisation &amp; cession d'une laiterie et cessions de parts">Valuation &amp; disposal of a dairy and share transfers</h2>
+        <p class="tx-description" data-en="Due diligence &amp; valuation. Stress scenarios. Investment committee approval. Completion of the exit transaction." data-fr="Due diligence &amp; valorisation. Stress scenarios. Validation du comit&eacute; d&apos;investissement. R&eacute;alisation de la transaction de sortie.">
+          Due diligence &amp; valuation. Stress scenarios. Investment committee approval. Completion of the exit transaction.
         </p>
       </div>
       <div class="tx-meta">
         <div class="tx-meta-row">
-          <span class="tx-meta-key">Géographie</span>
-          <span class="tx-meta-value">Afrique de l'Ouest</span>
+          <span class="tx-meta-key" data-en="Geography" data-fr="G&eacute;ographie">Geography</span>
+          <span class="tx-meta-value" data-en="West Africa" data-fr="Afrique de l'Ouest">West Africa</span>
         </div>
         <div class="tx-meta-row">
-          <span class="tx-meta-key">Année</span>
+          <span class="tx-meta-key" data-en="Year" data-fr="Ann&eacute;e">Year</span>
           <span class="tx-meta-value">2022</span>
         </div>
         <div class="tx-meta-row">
-          <span class="tx-meta-key">Statut</span>
-          <span class="tx-meta-value tx-status closed">Réalisé</span>
+          <span class="tx-meta-key" data-en="Status" data-fr="Statut">Status</span>
+          <span class="tx-meta-value tx-status closed" data-en="Completed" data-fr="R&eacute;alis&eacute;">Completed</span>
         </div>
       </div>
     </div>
@@ -101,28 +105,25 @@
     <div class="transaction-item" data-category="transaction">
       <div class="tx-main">
         <div class="tx-tags">
-          <span class="tx-type type-transaction">Transactions</span>
+          <span class="tx-type type-transaction" data-en="Transactions" data-fr="Transactions">Transactions</span>
         </div>
-        <h2 class="tx-title">Investissement dans une institution de microfinance</h2>
-        <p class="tx-description">
-          Due diligence &amp; valorisation.
-          Scénarios d'acquisition.
-          Préparation du dossier d'investissement.
-          Participation aux négociations.
+        <h2 class="tx-title" data-en="Investment in a microfinance institution" data-fr="Investissement dans une institution de microfinance">Investment in a microfinance institution</h2>
+        <p class="tx-description" data-en="Due diligence &amp; valuation. Acquisition scenarios. Investment file preparation. Participation in negotiations." data-fr="Due diligence &amp; valorisation. Sc&eacute;narios d&apos;acquisition. Pr&eacute;paration du dossier d&apos;investissement. Participation aux n&eacute;gociations.">
+          Due diligence &amp; valuation. Acquisition scenarios. Investment file preparation. Participation in negotiations.
         </p>
       </div>
       <div class="tx-meta">
         <div class="tx-meta-row">
-          <span class="tx-meta-key">Géographie</span>
-          <span class="tx-meta-value">Afrique de l'Ouest</span>
+          <span class="tx-meta-key" data-en="Geography" data-fr="G&eacute;ographie">Geography</span>
+          <span class="tx-meta-value" data-en="West Africa" data-fr="Afrique de l'Ouest">West Africa</span>
         </div>
         <div class="tx-meta-row">
-          <span class="tx-meta-key">Année</span>
+          <span class="tx-meta-key" data-en="Year" data-fr="Ann&eacute;e">Year</span>
           <span class="tx-meta-value">2025</span>
         </div>
         <div class="tx-meta-row">
-          <span class="tx-meta-key">Statut</span>
-          <span class="tx-meta-value tx-status closed">Réalisé</span>
+          <span class="tx-meta-key" data-en="Status" data-fr="Statut">Status</span>
+          <span class="tx-meta-value tx-status closed" data-en="Completed" data-fr="R&eacute;alis&eacute;">Completed</span>
         </div>
       </div>
     </div>
@@ -133,26 +134,23 @@
         <div class="tx-tags">
           <span class="tx-type type-blended" data-en="Blended Finance" data-fr="Finance Mixte">Blended Finance</span>
         </div>
-        <h2 class="tx-title">Entrepreneuriat des jeunes femmes</h2>
-        <p class="tx-description">
-          +80 entreprises incubées par an.
-          Conception d'un modèle de micro-investissement.
-          Préparation de dossier d'investissement.
-          Financement validé: 600 k€.
+        <h2 class="tx-title" data-en="Young women's entrepreneurship" data-fr="Entrepreneuriat des jeunes femmes">Young women's entrepreneurship</h2>
+        <p class="tx-description" data-en="+80 businesses incubated per year. Design of a micro-investment model. Investment file preparation. Validated financing: €600k." data-fr="+80 entreprises incub&eacute;es par an. Conception d&apos;un mod&egrave;le de micro-investissement. Pr&eacute;paration de dossier d&apos;investissement. Financement valid&eacute;&nbsp;: 600 k&euro;.">
+          +80 businesses incubated per year. Design of a micro-investment model. Investment file preparation. Validated financing: €600k.
         </p>
       </div>
       <div class="tx-meta">
         <div class="tx-meta-row">
-          <span class="tx-meta-key">Géographie</span>
-          <span class="tx-meta-value">Afrique de l'Ouest</span>
+          <span class="tx-meta-key" data-en="Geography" data-fr="G&eacute;ographie">Geography</span>
+          <span class="tx-meta-value" data-en="West Africa" data-fr="Afrique de l'Ouest">West Africa</span>
         </div>
         <div class="tx-meta-row">
-          <span class="tx-meta-key">Période</span>
+          <span class="tx-meta-key" data-en="Period" data-fr="P&eacute;riode">Period</span>
           <span class="tx-meta-value">2024 – 2028</span>
         </div>
         <div class="tx-meta-row">
-          <span class="tx-meta-key">Statut</span>
-          <span class="tx-meta-value tx-status closed">En cours</span>
+          <span class="tx-meta-key" data-en="Status" data-fr="Statut">Status</span>
+          <span class="tx-meta-value tx-status closed" data-en="Ongoing" data-fr="En cours">Ongoing</span>
         </div>
       </div>
     </div>
@@ -161,29 +159,25 @@
     <div class="transaction-item" data-category="agriculture">
       <div class="tx-main">
         <div class="tx-tags">
-          <span class="tx-type type-agriculture">Agriculture</span>
+          <span class="tx-type type-agriculture" data-en="Agriculture" data-fr="Agriculture">Agriculture</span>
         </div>
-        <h2 class="tx-title">Fonds chaînes de valeur agricoles locales pour cantines scolaires</h2>
-        <p class="tx-description">
-          Étude des filières riz et lait.
-          569 producteurs, 814 ha cultivés.
-          25 unités de transformation de paddy.
-          7 laiteries, 270 000 enfants bénéficiaires.
-          Taille cible du fonds: USD 110M.
+        <h2 class="tx-title" data-en="Local agricultural value chain fund for school canteens" data-fr="Fonds cha&icirc;nes de valeur agricoles locales pour cantines scolaires">Local agricultural value chain fund for school canteens</h2>
+        <p class="tx-description" data-en="Rice and dairy value chain study. 569 producers, 814 ha cultivated. 25 paddy processing units. 7 dairies, 270,000 child beneficiaries. Target fund size: USD 110M." data-fr="&Eacute;tude des fili&egrave;res riz et lait. 569 producteurs, 814 ha cultiv&eacute;s. 25 unit&eacute;s de transformation de paddy. 7 laiteries, 270&nbsp;000 enfants b&eacute;n&eacute;ficiaires. Taille cible du fonds&nbsp;: USD 110M.">
+          Rice and dairy value chain study. 569 producers, 814 ha cultivated. 25 paddy processing units. 7 dairies, 270,000 child beneficiaries. Target fund size: USD 110M.
         </p>
       </div>
       <div class="tx-meta">
         <div class="tx-meta-row">
-          <span class="tx-meta-key">Géographie</span>
-          <span class="tx-meta-value">Afrique de l'Ouest</span>
+          <span class="tx-meta-key" data-en="Geography" data-fr="G&eacute;ographie">Geography</span>
+          <span class="tx-meta-value" data-en="West Africa" data-fr="Afrique de l'Ouest">West Africa</span>
         </div>
         <div class="tx-meta-row">
-          <span class="tx-meta-key">Période</span>
+          <span class="tx-meta-key" data-en="Period" data-fr="P&eacute;riode">Period</span>
           <span class="tx-meta-value">2023 – 2024</span>
         </div>
         <div class="tx-meta-row">
-          <span class="tx-meta-key">Statut</span>
-          <span class="tx-meta-value tx-status closed">Réalisé</span>
+          <span class="tx-meta-key" data-en="Status" data-fr="Statut">Status</span>
+          <span class="tx-meta-value tx-status closed" data-en="Completed" data-fr="R&eacute;alis&eacute;">Completed</span>
         </div>
       </div>
     </div>
@@ -192,28 +186,25 @@
     <div class="transaction-item" data-category="climate">
       <div class="tx-main">
         <div class="tx-tags">
-          <span class="tx-type type-climate">Finance Climatique</span>
+          <span class="tx-type type-climate" data-en="Climate Finance" data-fr="Finance Climatique">Climate Finance</span>
         </div>
-        <h2 class="tx-title">Programme d'adaptation climatique des petits producteurs</h2>
-        <p class="tx-description">
-          Quatre institutions de microfinance renforcées.
-          Développement d'un cadre incitatif de blended finance.
-          Cible: 3 500+ producteurs financés.
-          +USD 4M de financements octroyés.
+        <h2 class="tx-title" data-en="Climate adaptation programme for smallholder farmers" data-fr="Programme d&apos;adaptation climatique des petits producteurs">Climate adaptation programme for smallholder farmers</h2>
+        <p class="tx-description" data-en="Four microfinance institutions strengthened. Development of a blended finance incentive framework. Target: 3,500+ farmers financed. +USD 4M in financing deployed." data-fr="Quatre institutions de microfinance renforc&eacute;es. D&eacute;veloppement d&apos;un cadre incitatif de blended finance. Cible&nbsp;: 3&nbsp;500+ producteurs financ&eacute;s. +USD 4M de financements octroy&eacute;s.">
+          Four microfinance institutions strengthened. Development of a blended finance incentive framework. Target: 3,500+ farmers financed. +USD 4M in financing deployed.
         </p>
       </div>
       <div class="tx-meta">
         <div class="tx-meta-row">
-          <span class="tx-meta-key">Géographie</span>
-          <span class="tx-meta-value">Afrique de l'Ouest &amp; Australe</span>
+          <span class="tx-meta-key" data-en="Geography" data-fr="G&eacute;ographie">Geography</span>
+          <span class="tx-meta-value" data-en="West &amp; Southern Africa" data-fr="Afrique de l'Ouest &amp; Australe">West &amp; Southern Africa</span>
         </div>
         <div class="tx-meta-row">
-          <span class="tx-meta-key">Période</span>
+          <span class="tx-meta-key" data-en="Period" data-fr="P&eacute;riode">Period</span>
           <span class="tx-meta-value">2025 – 2027</span>
         </div>
         <div class="tx-meta-row">
-          <span class="tx-meta-key">Statut</span>
-          <span class="tx-meta-value tx-status closed">En cours</span>
+          <span class="tx-meta-key" data-en="Status" data-fr="Statut">Status</span>
+          <span class="tx-meta-value tx-status closed" data-en="Ongoing" data-fr="En cours">Ongoing</span>
         </div>
       </div>
     </div>
@@ -222,27 +213,25 @@
     <div class="transaction-item" data-category="agriculture">
       <div class="tx-main">
         <div class="tx-tags">
-          <span class="tx-type type-agriculture">Agriculture</span>
+          <span class="tx-type type-agriculture" data-en="Agriculture" data-fr="Agriculture">Agriculture</span>
         </div>
-        <h2 class="tx-title">Renforcement de la filière noix de cajou</h2>
-        <p class="tx-description">
-          Accès au marché international.
-          Structuration d'un programme d'assistance technique.
-          Mandat actif en cours.
+        <h2 class="tx-title" data-en="Cashew value chain development" data-fr="Renforcement de la fili&egrave;re noix de cajou">Cashew value chain development</h2>
+        <p class="tx-description" data-en="International market access. Technical assistance programme structuring. Active mandate, ongoing." data-fr="Acc&egrave;s au march&eacute; international. Structuration d&apos;un programme d&apos;assistance technique. Mandat actif en cours.">
+          International market access. Technical assistance programme structuring. Active mandate, ongoing.
         </p>
       </div>
       <div class="tx-meta">
         <div class="tx-meta-row">
-          <span class="tx-meta-key">Géographie</span>
-          <span class="tx-meta-value">Afrique de l'Ouest</span>
+          <span class="tx-meta-key" data-en="Geography" data-fr="G&eacute;ographie">Geography</span>
+          <span class="tx-meta-value" data-en="West Africa" data-fr="Afrique de l'Ouest">West Africa</span>
         </div>
         <div class="tx-meta-row">
-          <span class="tx-meta-key">Année</span>
+          <span class="tx-meta-key" data-en="Year" data-fr="Ann&eacute;e">Year</span>
           <span class="tx-meta-value">2026</span>
         </div>
         <div class="tx-meta-row">
-          <span class="tx-meta-key">Statut</span>
-          <span class="tx-meta-value tx-status closed">Mandat actif</span>
+          <span class="tx-meta-key" data-en="Status" data-fr="Statut">Status</span>
+          <span class="tx-meta-value tx-status closed" data-en="Active mandate" data-fr="Mandat actif">Active mandate</span>
         </div>
       </div>
     </div>
@@ -277,7 +266,6 @@
           <li><a href="approach.html" data-en="Approach" data-fr="Approche">Approach</a></li>
           <li><a href="projects.html" data-en="Projects" data-fr="Projets">Projects</a></li>
           <li><a href="services.html" data-en="Services" data-fr="Services">Services</a></li>
-          <li><a href="team.html" data-en="Team" data-fr="&#201;quipe">Team</a></li>
           <li><a href="insights.html" data-en="Insights" data-fr="Publications">Insights</a></li>
           <li><a href="careers.html" data-en="Careers" data-fr="Carri&#232;res">Careers</a></li>
           <li><a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a></li>
