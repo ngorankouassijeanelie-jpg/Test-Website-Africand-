@@ -38,18 +38,12 @@ nav {
   left: 0;
   right: 0;
   z-index: 100;
-  background: transparent;
+  background: var(--white);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 80px;
   height: 72px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  transition: background 0.4s ease, border-color 0.4s ease;
-}
-
-nav.nav--solid {
-  background: var(--white);
   border-bottom: var(--rule);
 }
 
@@ -58,15 +52,9 @@ nav.nav--solid {
   font-weight: 600;
   font-size: 24px;
   letter-spacing: 0.28em;
-  color: #FFFFFF;
+  color: var(--navy);
   text-decoration: none;
   text-transform: uppercase;
-  transition: color 0.4s ease;
-  opacity: 1;
-}
-
-nav.nav--solid .nav-logo {
-  color: var(--navy);
 }
 
 .nav-links {
@@ -81,20 +69,13 @@ nav.nav--solid .nav-logo {
   font-weight: 400;
   letter-spacing: 0.13em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.75);
+  color: #3A3A3A;
   text-decoration: none;
   transition: color 0.2s;
 }
 
-.nav-links a:hover {
-  color: var(--white);
-}
-
-nav.nav--solid .nav-links a {
-  color: #3A3A3A;
-}
-
-nav.nav--solid .nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
   color: var(--navy);
 }
 
@@ -113,11 +94,6 @@ nav.nav--solid .nav-links a:hover {
   display: block;
   width: 22px;
   height: 1px;
-  background: var(--white);
-  transition: background 0.4s;
-}
-
-nav.nav--solid .nav-burger span {
   background: var(--navy);
 }
 
