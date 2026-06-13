@@ -3,8 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Africand Consulting analyzes the financing gap in Côte d'Ivoire cashew processing. Key findings for agro-industrial operators seeking capital in 2026." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Cashew Processing Gap Financing · Africand Consulting" />
+  <meta property="og:description" content="Africand Consulting analyzes the financing gap in Côte d'Ivoire cashew processing. Key findings for agro-industrial operators seeking capital in 2026." />
+  <meta property="og:image"       content="https://africand.com/images/og-cover.jpg" />
+  <meta property="og:url"         content="https://africand.com/insights/cashew-processing-gap-financing.html" />
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Cashew Processing Gap Financing · Africand Consulting" />
+  <meta name="twitter:description" content="Africand Consulting analyzes the financing gap in Côte d'Ivoire cashew processing. Key findings for agro-industrial operators seeking capital in 2026." />
+  <link rel="canonical" href="https://africand.com/insights/cashew-processing-gap-financing.html" />
   <title>The Cashew Processing Gap A Financing Perspective | Africand Consulting</title>
-  <meta name="description" content="Africand Consulting analyzes the financing gap in Côte d'Ivoire cashew processing. Key findings and recommendations for agro-industrial operators seeking capital in 2026." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />  <link rel="stylesheet" href="css/cashew-processing-gap-financing.css">
@@ -280,36 +289,7 @@
       <p class="footer-legal">contact@africand.com</p>
     </div>
   </footer>
+  <script src="../js/main.js" defer></script>
 
-  <script>
-    // Language switcher
-    function toggleLang() {
-      var current = localStorage.getItem('lang') || 'en';
-      var next = current === 'en' ? 'fr' : 'en';
-      setLang(next);
-      var el = document.querySelector('.lang-current');
-      if (el) el.textContent = next.toUpperCase();
-    }
-        function setLang(lang) {
-      localStorage.setItem('lang', lang);
-      document.querySelectorAll('[data-en]').forEach(function(el) {
-        el.innerHTML = lang === 'fr' ? el.getAttribute('data-fr') : el.getAttribute('data-en');
-      });
-      document.querySelectorAll('.lang-btn').forEach(function(btn) {
-        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
-      });
-    
-      var langEl = document.querySelector('.lang-current');
-      if (langEl) langEl.textContent = lang.toUpperCase();
-    }
-    (function() {
-      var saved = localStorage.getItem('lang') || 'en';
-      if (saved === 'fr') setLang('fr');
-    })();
-
-    document.getElementById('burger').addEventListener('click', function() {
-      document.getElementById('navLinks').classList.toggle('open');
-    });
-  </script>
 </body>
 </html>

@@ -3,6 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Africand Consulting to discuss your M&A mandate or financing need in West Africa's agro-industrial sector." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Contact — Africand Consulting" />
+  <meta property="og:description" content="Contact Africand Consulting to discuss your M&A mandate or financing need in West Africa's agro-industrial sector." />
+  <meta property="og:image"       content="https://africand.com/images/og-cover.jpg" />
+  <meta property="og:url"         content="https://africand.com/contact.html" />
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Contact — Africand Consulting" />
+  <meta name="twitter:description" content="Contact Africand Consulting to discuss your M&A mandate or financing need in West Africa's agro-industrial sector." />
+  <link rel="canonical" href="https://africand.com/contact.html" />
   <title>Contact — Africand Consulting</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -119,66 +129,9 @@
     </div>
 
   </div>
+  <script src="js/main.js" defer></script>
+  <script src="js/contact.js" defer></script>
 
-  <script>
-    // Language switcher
-    function toggleLang() {
-      var current = localStorage.getItem('lang') || 'en';
-      var next = current === 'en' ? 'fr' : 'en';
-      setLang(next);
-      var el = document.querySelector('.lang-current');
-      if (el) el.textContent = next.toUpperCase();
-    }
-        function setLang(lang) {
-      localStorage.setItem('lang', lang);
-      document.querySelectorAll('[data-en]').forEach(function(el) {
-        el.innerHTML = lang === 'fr' ? el.getAttribute('data-fr') : el.getAttribute('data-en');
-      });
-      document.querySelectorAll('.lang-btn').forEach(function(btn) {
-        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
-      });
-    
-      var langEl = document.querySelector('.lang-current');
-      if (langEl) langEl.textContent = lang.toUpperCase();
-    }
-    (function() {
-      var saved = localStorage.getItem('lang') || 'en';
-      if (saved === 'fr') setLang('fr');
-    })();
-
-    document.getElementById('burger').addEventListener('click', () => {
-      document.getElementById('navLinks').classList.toggle('open');
-    });
-
-    document.getElementById('contactForm').addEventListener('submit', async function(e) {
-      e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
-      if (!name || !email || !message) return;
-
-      const btn = this.querySelector('.btn-submit');
-      btn.disabled = true;
-
-      try {
-        const res = await fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
-          method: 'POST',
-          headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
-          body: JSON.stringify({ name, email, message })
-        });
-        if (res.ok) {
-          this.style.display = 'none';
-          document.getElementById('formSuccess').classList.add('visible');
-        } else {
-          btn.disabled = false;
-          alert('An error occurred. Please email us directly at contact@africand.com');
-        }
-      } catch (err) {
-        btn.disabled = false;
-        alert('Network error. Please email us directly at contact@africand.com');
-      }
-    });
-  </script>
 
 </body>
 </html>

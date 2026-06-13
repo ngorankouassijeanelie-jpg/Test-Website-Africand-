@@ -3,8 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Careers — Africand Consulting</title>
   <meta name="description" content="Join Africand Consulting. We work on complex agro-industrial transactions across West Africa and look for exceptional talent." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Careers — Africand Consulting" />
+  <meta property="og:description" content="Join Africand Consulting. We work on complex agro-industrial transactions across West Africa and look for exceptional talent." />
+  <meta property="og:image"       content="https://africand.com/images/og-cover.jpg" />
+  <meta property="og:url"         content="https://africand.com/careers.html" />
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Careers — Africand Consulting" />
+  <meta name="twitter:description" content="Join Africand Consulting. We work on complex agro-industrial transactions across West Africa and look for exceptional talent." />
+  <link rel="canonical" href="https://africand.com/careers.html" />
+  <title>Careers — Africand Consulting</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />  <link rel="stylesheet" href="css/careers.css">
@@ -183,59 +192,8 @@
       <p class="footer-legal">contact@africand.com</p>
     </div>
   </footer>
+  <script src="js/main.js" defer></script>
 
-  <script>
-    // Language switcher
-    function toggleLang() {
-      var current = localStorage.getItem('lang') || 'en';
-      var next = current === 'en' ? 'fr' : 'en';
-      setLang(next);
-      var el = document.querySelector('.lang-current');
-      if (el) el.textContent = next.toUpperCase();
-    }
-        function setLang(lang) {
-      localStorage.setItem('lang', lang);
-      document.querySelectorAll('[data-en]').forEach(function(el) {
-        el.innerHTML = lang === 'fr' ? el.getAttribute('data-fr') : el.getAttribute('data-en');
-      });
-      document.querySelectorAll('.lang-btn').forEach(function(btn) {
-        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
-      });
-    
-      var langEl = document.querySelector('.lang-current');
-      if (langEl) langEl.textContent = lang.toUpperCase();
-    }
-    (function() {
-      var saved = localStorage.getItem('lang') || 'en';
-      if (saved === 'fr') setLang('fr');
-    })();
-
-    document.getElementById('burger').addEventListener('click', function() {
-      document.getElementById('navLinks').classList.toggle('open');
-    });
-
-    var reveals = [
-      document.getElementById('stmtEl'),
-      document.getElementById('crit1'),
-      document.getElementById('crit2'),
-      document.getElementById('crit3'),
-      document.getElementById('pos1'),
-      document.getElementById('pos2'),
-      document.getElementById('pos3'),
-      document.getElementById('specEl')
-    ];
-
-    var obs = new IntersectionObserver(function(entries) {
-      entries.forEach(function(e, i) {
-        if (e.isIntersecting) {
-          setTimeout(function() { e.target.classList.add('visible'); }, i * 100);
-          obs.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.1 });
-
-    reveals.forEach(function(el) { if (el) obs.observe(el); });
-  </script>
 
 </body>
 </html>

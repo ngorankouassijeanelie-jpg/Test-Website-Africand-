@@ -3,8 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Associate, Transaction Advisory · Africand Consulting</title>
   <meta name="description" content="Join Africand Consulting as an Associate in Transaction Advisory. Abidjan, Côte d'Ivoire." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Associate, Transaction Advisory · Africand Consulting" />
+  <meta property="og:description" content="Join Africand Consulting as an Associate in Transaction Advisory. Abidjan, Côte d'Ivoire." />
+  <meta property="og:image"       content="https://africand.com/images/og-cover.jpg" />
+  <meta property="og:url"         content="https://africand.com/careers/associate-transaction-advisory.html" />
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Associate, Transaction Advisory · Africand Consulting" />
+  <meta name="twitter:description" content="Join Africand Consulting as an Associate in Transaction Advisory. Abidjan, Côte d'Ivoire." />
+  <link rel="canonical" href="https://africand.com/careers/associate-transaction-advisory.html" />
+  <title>Associate, Transaction Advisory · Africand Consulting</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />  <link rel="stylesheet" href="css/associate-transaction-advisory.css">
@@ -195,47 +204,8 @@
       <p class="footer-legal">contact@africand.com</p>
     </div>
   </footer>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/career-page.js" defer></script>
 
-  <script>
-    // Language switcher
-    function toggleLang() {
-      var current = localStorage.getItem('lang') || 'en';
-      var next = current === 'en' ? 'fr' : 'en';
-      setLang(next);
-      var el = document.querySelector('.lang-current');
-      if (el) el.textContent = next.toUpperCase();
-    }
-        function setLang(lang) {
-      localStorage.setItem('lang', lang);
-      document.querySelectorAll('[data-en]').forEach(function(el) {
-        el.innerHTML = lang === 'fr' ? el.getAttribute('data-fr') : el.getAttribute('data-en');
-      });
-      document.querySelectorAll('.lang-btn').forEach(function(btn) {
-        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
-      });
-    
-      var langEl = document.querySelector('.lang-current');
-      if (langEl) langEl.textContent = lang.toUpperCase();
-    }
-    (function() {
-      var saved = localStorage.getItem('lang') || 'en';
-      if (saved === 'fr') setLang('fr');
-    })();
-
-    document.getElementById('burger').addEventListener('click', function() { document.getElementById('navLinks').classList.toggle('open'); });
-    function setupFileUpload(inputId, boxId, nameId) {
-      var input = document.getElementById(inputId), box = document.getElementById(boxId), nameEl = document.getElementById(nameId);
-      input.addEventListener('change', function() { if (this.files && this.files[0]) { nameEl.textContent = this.files[0].name; box.classList.add('has-file'); } });
-    }
-    setupFileUpload('cvFile', 'cvBox', 'cvName');
-    setupFileUpload('clFile', 'clBox', 'clName');
-    document.getElementById('applyForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      document.getElementById('formWrap').style.display = 'none';
-      document.getElementById('successMsg').classList.add('show');
-    });
-    var obs = new IntersectionObserver(function(entries) { entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }); }, { threshold: 0.1 });
-    ['ds1','ds2','ds3','ds4'].forEach(function(id) { var el = document.getElementById(id); if (el) obs.observe(el); });
-  </script>
 </body>
 </html>

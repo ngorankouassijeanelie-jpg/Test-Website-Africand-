@@ -3,6 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Selected mandates and transactions advised by Africand Consulting across agro-industrial value chains in West Africa." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Projects — Africand Consulting" />
+  <meta property="og:description" content="Selected mandates and transactions advised by Africand Consulting across agro-industrial value chains in West Africa." />
+  <meta property="og:image"       content="https://africand.com/images/og-cover.jpg" />
+  <meta property="og:url"         content="https://africand.com/projects.html" />
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Projects — Africand Consulting" />
+  <meta name="twitter:description" content="Selected mandates and transactions advised by Africand Consulting across agro-industrial value chains in West Africa." />
+  <link rel="canonical" href="https://africand.com/projects.html" />
   <title>Selected Transactions — Africand Consulting</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -301,64 +311,9 @@
       <p class="footer-legal">contact@africand.com</p>
     </div>
   </footer>
+  <script src="js/main.js" defer></script>
+  <script src="js/projects.js" defer></script>
 
-  <script>
-    // Language switcher
-    function toggleLang() {
-      var current = localStorage.getItem('lang') || 'en';
-      var next = current === 'en' ? 'fr' : 'en';
-      setLang(next);
-      var el = document.querySelector('.lang-current');
-      if (el) el.textContent = next.toUpperCase();
-    }
-        function setLang(lang) {
-      localStorage.setItem('lang', lang);
-      document.querySelectorAll('[data-en]').forEach(function(el) {
-        el.innerHTML = lang === 'fr' ? el.getAttribute('data-fr') : el.getAttribute('data-en');
-      });
-      document.querySelectorAll('.lang-btn').forEach(function(btn) {
-        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
-      });
-    
-      var langEl = document.querySelector('.lang-current');
-      if (langEl) langEl.textContent = lang.toUpperCase();
-    }
-    (function() {
-      var saved = localStorage.getItem('lang') || 'en';
-      if (saved === 'fr') setLang('fr');
-    })();
-
-    // Burger
-    document.getElementById('burger').addEventListener('click', () => {
-      document.getElementById('navLinks').classList.toggle('open');
-    });
-
-    // Scroll reveal
-    const allReveal = document.querySelectorAll('.transaction-item, #statementEl');
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach((e, i) => {
-        if (e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 60);
-      });
-    }, { threshold: 0.08 });
-    allReveal.forEach(el => obs.observe(el));
-
-    // Filter
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const txItems = document.querySelectorAll('.transaction-item');
-
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const filter = btn.dataset.filter;
-        txItems.forEach(item => {
-          const show = filter === 'all' || item.dataset.category === filter;
-          item.style.display = show ? 'grid' : 'none';
-          if (show) setTimeout(() => item.classList.add('visible'), 60);
-        });
-      });
-    });
-  </script>
 
 </body>
 </html>

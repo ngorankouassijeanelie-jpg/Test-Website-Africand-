@@ -4,6 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Meet the Africand Consulting team — financial and strategic advisors specialized in West African agro-industrial markets." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Team — Africand Consulting" />
+  <meta property="og:description" content="Meet the Africand Consulting team — financial and strategic advisors specialized in West African agro-industrial markets." />
+  <meta property="og:image"       content="https://africand.com/images/og-cover.jpg" />
+  <meta property="og:url"         content="https://africand.com/team.html" />
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Team — Africand Consulting" />
+  <meta name="twitter:description" content="Meet the Africand Consulting team — financial and strategic advisors specialized in West African agro-industrial markets." />
+  <link rel="canonical" href="https://africand.com/team.html" />
   <title>Team — Africand Consulting</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,7 +61,7 @@
     <div class="profile-lead" id="p1">
       <div class="profile-photo">
         <div class="profile-photo-inner" style="background:none;">
-          <img src="images/team/jean-elie-ngoran.jpeg" alt="Jean Élie N'Goran"
+          <img loading="lazy" src="images/team/jean-elie-ngoran.jpeg" alt="Jean Élie N'Goran"
             style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(1.05) brightness(0.95);" />
         </div>
       </div>
@@ -82,7 +92,7 @@
 
       <div class="profile-secondary" id="p2">
         <div class="profile-photo-sm" style="background:none;">
-          <img src="images/team/victoire-mavoungou.jpeg" alt="Victoire Mavoungou"
+          <img loading="lazy" src="images/team/victoire-mavoungou.jpeg" alt="Victoire Mavoungou"
             style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(1.05) brightness(0.95);" />
         </div>
         <h3 class="profile-name-sm">Victoire Mavoungou</h3>
@@ -108,7 +118,7 @@
 
       <div class="profile-secondary" id="p3">
         <div class="profile-photo-sm" style="background:none;">
-          <img src="images/team/julien-leroy.jpeg" alt="Julien Leroy"
+          <img loading="lazy" src="images/team/julien-leroy.jpeg" alt="Julien Leroy"
             style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(1.05) brightness(0.95);" />
         </div>
         <h3 class="profile-name-sm">Julien Leroy</h3>
@@ -140,7 +150,7 @@
 
       <div class="profile-secondary" id="p4">
         <div class="profile-photo-sm" style="background:none;">
-          <img src="images/team/hamed-adam-ouattara.jpeg" alt="Hamed Adam Ouattara"
+          <img loading="lazy" src="images/team/hamed-adam-ouattara.jpeg" alt="Hamed Adam Ouattara"
             style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(1.05) brightness(0.95);" />
         </div>
         <h3 class="profile-name-sm">Adams Ouattara</h3>
@@ -162,7 +172,7 @@
 
       <div class="profile-secondary" id="p5">
         <div class="profile-photo-sm" style="background:none;">
-          <img src="images/team/michael-kouassi.jpeg" alt="Michaël Zahoro Kouassi"
+          <img loading="lazy" src="images/team/michael-kouassi.jpeg" alt="Michaël Zahoro Kouassi"
             style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(1.05) brightness(0.95);" />
         </div>
         <h3 class="profile-name-sm">Micha&#235;l Zahoro Kouassi</h3>
@@ -245,44 +255,8 @@
       <p class="footer-legal">contact@africand.com</p>
     </div>
   </footer>
+  <script src="js/main.js" defer></script>
 
-  <script>
-    // Language switcher
-    function toggleLang() {
-      var current = localStorage.getItem('lang') || 'en';
-      var next = current === 'en' ? 'fr' : 'en';
-      setLang(next);
-      var el = document.querySelector('.lang-current');
-      if (el) el.textContent = next.toUpperCase();
-    }
-        function setLang(lang) {
-      localStorage.setItem('lang', lang);
-      document.querySelectorAll('[data-en]').forEach(function (el) {
-        el.innerHTML = lang === 'fr' ? el.getAttribute('data-fr') : el.getAttribute('data-en');
-      });
-      document.querySelectorAll('.lang-btn').forEach(function (btn) {
-        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
-      });
-    
-      var langEl = document.querySelector('.lang-current');
-      if (langEl) langEl.textContent = lang.toUpperCase();
-    }
-    (function () {
-      var saved = localStorage.getItem('lang') || 'en';
-      if (saved === 'fr') setLang('fr');
-    })();
-
-    document.getElementById('burger').addEventListener('click', () => {
-      document.getElementById('navLinks').classList.toggle('open');
-    });
-    const profiles = document.querySelectorAll('.profile-lead, .profile-secondary');
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach((e, i) => {
-        if (e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 120);
-      });
-    }, { threshold: 0.1 });
-    profiles.forEach(p => obs.observe(p));
-  </script>
 
 </body>
 

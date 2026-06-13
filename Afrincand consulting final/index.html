@@ -4,6 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="M&A and strategic advisory for agro-industrial value chains across West Africa. We structure capital and build operational capacity." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Africand Consulting — West Africa Agro-Industry Advisory" />
+  <meta property="og:description" content="M&A and strategic advisory for agro-industrial value chains across West Africa. We structure capital and build operational capacity." />
+  <meta property="og:image"       content="https://africand.com/images/og-cover.jpg" />
+  <meta property="og:url"         content="https://africand.com/" />
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Africand Consulting — West Africa Agro-Industry Advisory" />
+  <meta name="twitter:description" content="M&A and strategic advisory for agro-industrial value chains across West Africa. We structure capital and build operational capacity." />
+  <link rel="canonical" href="https://africand.com/" />
   <title>Africand Consulting — West Africa Agro-Industry Advisory</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -186,7 +196,7 @@
   <!-- MANAGING PARTNER -->
   <section class="partner-bloc" id="partnerEl">
     <div class="partner-photo" style="background:none;overflow:hidden;">
-      <img src="images/team/jean-elie-ngoran.jpg" alt="Jean Élie N'Goran"
+      <img loading="lazy" src="images/team/jean-elie-ngoran.jpg" alt="Jean Élie N'Goran"
         style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(1.05) brightness(0.95);" />
     </div>
     <div class="partner-content">
@@ -449,95 +459,9 @@
       <p class="footer-legal">contact@africand.com</p>
     </div>
   </footer>
+  <script src="js/main.js" defer></script>
+  <script src="js/index.js" defer></script>
 
-  <script>
-    // Language switcher
-    function toggleLang() {
-      var current = localStorage.getItem('lang') || 'en';
-      var next = current === 'en' ? 'fr' : 'en';
-      setLang(next);
-      var el = document.querySelector('.lang-current');
-      if (el) el.textContent = next.toUpperCase();
-    }
-        function setLang(lang) {
-      localStorage.setItem('lang', lang);
-      document.querySelectorAll('[data-en]').forEach(function (el) {
-        el.innerHTML = lang === 'fr' ? el.getAttribute('data-fr') : el.getAttribute('data-en');
-      });
-      document.querySelectorAll('.lang-btn').forEach(function (btn) {
-        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
-      });
-    
-      var langEl = document.querySelector('.lang-current');
-      if (langEl) langEl.textContent = lang.toUpperCase();
-    }
-    (function () {
-      var saved = localStorage.getItem('lang') || 'en';
-      if (saved === 'fr') setLang('fr');
-    })();
-
-    // Nav: transparent on hero → solid as soon as user scrolls
-    (function () {
-      var nav = document.querySelector('nav');
-      function updateNav() {
-        if (window.scrollY > 40) {
-          nav.classList.add('nav--solid');
-        } else {
-          nav.classList.remove('nav--solid');
-        }
-      }
-      window.addEventListener('scroll', updateNav, { passive: true });
-      updateNav();
-    })();
-
-    // Burger
-    document.getElementById('burger').addEventListener('click', function () {
-      document.getElementById('navLinks').classList.toggle('open');
-    });
-
-    // Hero Slideshow
-    (function () {
-      var slides = document.querySelectorAll('.hero-slide');
-      if (slides.length === 0) return;
-      var current = 0;
-      setInterval(function () {
-        slides[current].classList.remove('active');
-        current = (current + 1) % slides.length;
-        slides[current].classList.add('active');
-      }, 6000);
-    })();
-
-    // Scroll reveal
-    var reveals = [
-      document.getElementById('stat1'),
-      document.getElementById('stat2'),
-      document.getElementById('stat3'),
-      document.getElementById('stat4'),
-      document.getElementById('expLabel'),
-      document.querySelectorAll('.value-col')[0],
-      document.querySelectorAll('.value-col')[1],
-      document.querySelectorAll('.value-col')[2],
-      document.getElementById('refEl'),
-      document.getElementById('partnerEl'),
-      document.getElementById('insightsHeader'),
-      document.getElementById('icard1'),
-      document.getElementById('icard2'),
-      document.getElementById('icard3'),
-      document.getElementById('latestTxEl'),
-      document.getElementById('careersEl')
-    ];
-
-    var obs = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e, i) {
-        if (e.isIntersecting) {
-          setTimeout(function () { e.target.classList.add('visible'); }, i * 100);
-          obs.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.1 });
-
-    reveals.forEach(function (el) { if (el) obs.observe(el); });
-  </script>
 
 </body>
 

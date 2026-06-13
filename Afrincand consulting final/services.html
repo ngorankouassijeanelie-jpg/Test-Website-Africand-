@@ -3,6 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="M&A advisory, financial structuring, due diligence and capacity building for agro-industrial operators across West Africa." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Services — Africand Consulting" />
+  <meta property="og:description" content="M&A advisory, financial structuring, due diligence and capacity building for agro-industrial operators across West Africa." />
+  <meta property="og:image"       content="https://africand.com/images/og-cover.jpg" />
+  <meta property="og:url"         content="https://africand.com/services.html" />
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Services — Africand Consulting" />
+  <meta name="twitter:description" content="M&A advisory, financial structuring, due diligence and capacity building for agro-industrial operators across West Africa." />
+  <link rel="canonical" href="https://africand.com/services.html" />
   <title>Services — Africand Consulting</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -196,44 +206,8 @@
       <p class="footer-legal">contact@africand.com</p>
     </div>
   </footer>
+  <script src="js/main.js" defer></script>
 
-  <script>
-    // Language switcher
-    function toggleLang() {
-      var current = localStorage.getItem('lang') || 'en';
-      var next = current === 'en' ? 'fr' : 'en';
-      setLang(next);
-      var el = document.querySelector('.lang-current');
-      if (el) el.textContent = next.toUpperCase();
-    }
-        function setLang(lang) {
-      localStorage.setItem('lang', lang);
-      document.querySelectorAll('[data-en]').forEach(function(el) {
-        el.innerHTML = lang === 'fr' ? el.getAttribute('data-fr') : el.getAttribute('data-en');
-      });
-      document.querySelectorAll('.lang-btn').forEach(function(btn) {
-        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
-      });
-    
-      var langEl = document.querySelector('.lang-current');
-      if (langEl) langEl.textContent = lang.toUpperCase();
-    }
-    (function() {
-      var saved = localStorage.getItem('lang') || 'en';
-      if (saved === 'fr') setLang('fr');
-    })();
-
-    document.getElementById('burger').addEventListener('click', () => {
-      document.getElementById('navLinks').classList.toggle('open');
-    });
-    const items = document.querySelectorAll('.service-item');
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach((e, i) => {
-        if (e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 80);
-      });
-    }, { threshold: 0.1 });
-    items.forEach(t => obs.observe(t));
-  </script>
 
 </body>
 </html>
